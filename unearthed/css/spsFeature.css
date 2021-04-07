@@ -1,0 +1,562 @@
+﻿body {
+    background-color: rgba(255,255,255,1.0);
+    background-image: url(/unearthed/images/bgs/kraft-light/tile.jpg);
+    background-attachment: fixed;
+    color: rgba(26,26,26,0.95);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "sf";
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+footer {
+    background-color: rgba(0,0,0,0.1);
+    border-top:1px solid rgba(255,255,255,1.0);
+}
+
+
+
+
+/* typography*/
+
+a:link, a:visited {
+    color: rgba(255,0,0,1.0);
+}
+a:hover, a:active {
+    color: rgba(255,0,0,1.0);
+    text-decoration: underline;
+}
+
+p,
+p a, 
+li a {
+    line-height:1.8em;
+}
+strong {
+    font-weight: 700;
+}
+ul, ul li {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    padding:0;
+    margin:0;
+    color: rgba(26,26,26,1.0);
+}
+h1, h2 {
+    font-family: "bureau";
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 2.0em;
+    font-weight: 500;
+}
+h5 {
+    font-size: 0.9em;
+    line-height: 2.0em;
+    text-transform: uppercase;
+}
+.small {
+    font-size: 80%;
+}
+.big {
+    font-size: 7.5em;
+    letter-spacing: -0.05em;
+    padding-right: .2em;
+}
+.Helv {
+    font-family: 'HelvObl';
+}
+.bureau {
+    font-family: 'bureau';
+}
+.white {
+    color: rgba(255,255,255,0.8) !important;
+}
+.black {
+    color: rgba(0,0,0,0.9) !important;
+}
+
+
+/* iconography */
+.iconCTA svg {
+    width:100%;
+    height:100%;
+}
+.iconCTA svg path {
+    fill:rgba(26,26,26,1.0);
+}
+.iconCTA svg circle {
+    fill: none;
+    stroke:rgba(26,26,26,1.0);
+}
+.iconCTA.light svg path {
+    fill:rgba(0,0,0,0.9);
+}
+.iconCTA.light svg circle {
+    fill: none;
+    stroke:rgba(0,0,0,0.9);
+}
+
+a.iconCTA {
+    display: inline-block;
+}
+a.iconCTA.compact {
+    width:25px;
+    height:25px;
+}
+a.iconCTA:hover svg path {
+    fill: rgba(237,27,36,1.0);
+}
+a.iconCTA:hover svg circle {
+    stroke: rgba(237,27,36,1.0);
+}
+a.iconCTA.compact.in-page {
+    margin:0px auto;
+    display: block;
+    width:25px;
+    height: 25px;
+    opacity:1.0;
+}
+a.iconCTA.compact.in-page.light {
+    opacity:1.0;
+}
+a.iconCTA.compact.in-page:hover {
+    opacity:1.0;
+}
+
+div.nextArrow {
+    position: relative;
+    margin:0px auto;
+    width: 32px;
+}
+div.nextArrow a {
+    position: absolute;
+    bottom: 15vh;
+}
+
+div.nextArrow.higher a {
+    bottom: 30vh;
+}
+
+
+
+
+
+
+/* layout */
+/* layout */
+/* layout */
+/* layout */
+
+div.fixedUI {
+    position:fixed;
+    width:100%;
+}
+div.fixedUI div#strip {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height:35px;
+   border-bottom:1px solid rgba(0,0,0,0.2);
+   padding-top: 7px;
+   padding-bottom: 5px;
+}
+div.logoChanger {
+    width: 150px;
+}
+div.logoChanger img {
+    width: 120px;
+    height: auto;
+    display: block;
+    padding: 0 15px 0 15px;
+}
+
+div#strip nav a {
+    margin-right:15px;
+    transition: 1s;
+}
+div#strip nav a.syncUpRight {
+    margin-right:60px;
+    transition: 1s;
+}
+
+
+
+
+
+
+/* footer default */
+footer section {
+    margin-bottom: 2em;
+}
+footer > div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer img {
+    width:95%;
+    height: auto;
+}
+footer img.brandID {
+    width:80%;
+}
+
+
+
+/* effects */
+.insetShdw-light {
+    box-shadow: inset 0px 20px 30px rgba(0,0,0,0.1);
+}
+.insetShdw-dark {
+    box-shadow: inset 0px 20px 30px rgba(0,0,0,0.8);
+}
+.offset-paper {
+    top:-20px; 
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+    opacity:0.98;
+}
+
+/* force hide */
+@media screen and (max-width: 750px) {
+    .mHide  {
+        display: none !important;
+    }
+}  
+
+@media screen and (min-width: 1100px) {
+    .dHide  {
+        display: none !important;
+    }
+}  
+
+
+
+/* z-indexes */
+div.slideContent {
+    z-index:10000;
+}
+div.fixedUI {
+    z-index:20000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* layout */
+
+/* default padding */
+div.slideContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.slideContent > div {
+    padding: 2vh 1vw;
+    margin-top: 1vh;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    footer > div {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    footer > div section {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    div.slideHolder,
+    div.slideContent {
+        position: relative;
+        height:100vh;
+    }
+    div.slideHolder.extend,
+    div.slideContent.extend {
+        position: relative;
+        height:100vh;
+    }
+    footer > div section {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    div.slideHolder,
+    div.slideContent {
+        position: relative;
+        height:100vh;
+    }
+    div.slideHolder.extend,
+    div.slideContent.extend {
+        position: relative;
+        height:100vh;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+}  
+
+
+
+/* content */
+ul.slideItems h2 {
+    font-family: 'bureau';
+    line-height: 1.2em;
+    font-size:1.7em;
+}
+ul.slideItems h3 {
+    font-family: 'HelvObl';
+    line-height: 1.2em;
+    font-size:1.3em;
+    text-transform: uppercase;
+    padding-right: 0vw;
+    margin-bottom: 0.35em;
+    margin-top: 0.2em;
+}
+ul.slideItems p {
+    margin-top: 0.15em;
+    margin-bottom: 0;
+    line-height: 1.25em;
+}
+ul.slideItems {
+    margin-top: 3vh;
+}
+ul.slideItems li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align:left ;
+}
+ul.slideItems li div:first-child {
+    flex-basis: 15%;
+}
+ul.slideItems li div:last-child {
+    border-top: 1px solid rgba(255,255,255,0.9);
+    padding-right: 1vw;
+}
+ul.slideItems li div {
+    flex-basis: 90%;
+    padding: 1.1em 0 1.2em 0;
+}
+div.rev ul.slideItems li div:last-child {
+    border-top: 1px solid rgba(26,26,26,1.0);
+}
+
+div.slideContent article img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+div.slideContent > div > article.singleCol {
+    margin:0px auto;
+    width:50vw;
+    display: flex;
+    align-items: center;
+}
+div.slideContent > div > article.singleCol > section,
+div.slideContent > div > article.singleCol > section > div {
+    flex-basis: 100%;
+    text-align: center;
+}
+div.slideContent > div > article.doubleCol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+}
+div.slideContent > div > article.flip {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+div.slideContent > div > article.vertical {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width:100%;
+}
+div.slideContent > div > article.doubleCol > section {
+    flex-basis: 33vw;
+}
+div.slideContent > div > article.doubleCol > section:last-child {
+    flex-basis: 44vw;
+}
+div.slideContent > div > article.flip > section:last-child {
+    flex-basis: 50vw;
+}
+
+div.slideContent > div > article.vertical > section:last-child {
+    flex-basis: 50vw;
+}
+
+div.slideContent section.listContent {
+    padding: 2vh 5vw 2vh 8vw;
+}
+div.slideContent article.flip section.listContent {
+    padding: 2vh 5vw 2vh 2vw;
+}
+
+
+section.artwork {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section.artwork > * {
+    position: absolute;
+    padding: 1vw;
+}
+
+div.insetContent {
+    padding: 5vw;
+}
+
+div.slideContent > div > article.vertical section.artwork {
+    min-height: 1%;
+}
+div.slideContent > div > article.vertical section.listContent {
+    width:33vw;
+    padding: 2vh 5vw;
+}
+
+
+@media screen and (max-width: 750px) {
+  
+}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (min-width:1100px) {
+}
+
+@media screen and (min-width: 2000px) {
+}  
+
+
+
+
+
+
+
+/* photo / polaroid styles */
+.bgPic {
+    opacity: 0.4;
+    background-color: rgba(0,0,0,0.90);
+    background-blend-mode: hard-light;
+}
+.bgPicSoftLight {
+    opacity: 0.8;
+    background-color: rgba(200,200,200,0.05);
+    background-blend-mode: soft-light;
+}
+.sold {
+    width:15vw !important;
+    height: 15vw;
+    border-radius:0vw;
+    background-size: cover;
+    top: 50vh; 
+}
+.paper {
+    width:18vw !important;
+    height: 25vw;
+    border-radius:0vw;
+    box-shadow: 0 0 40px rgba(0,0,0,1.0);
+    background-size: cover;
+    top: 50vh; 
+}
+.vintage {
+    width:22vw !important;
+    height: 22vw;
+    border-radius:4vw;
+    box-shadow: 0 0 40px rgba(0,0,0,1.0);
+    background-size: cover;
+    top: 50vh; 
+}
+.land1 {
+    width:25vw !important;
+    height: 17vw;
+    border-radius:0.5vw;
+    box-shadow: 0 0 40px rgba(0,0,0,1.0);
+    background-size: cover;
+    top: 50vh; 
+}
+.land2 {
+    width:30vw !important;
+    height: 20vw;
+    border-radius:0vw;
+    box-shadow: 0 0 40px rgba(0,0,0,1.0);
+    background-size: cover;
+    top: 50vh; 
+}
+.land2ClrCut {
+    width:36vw !important;
+    height: 23vw;
+    background-size: cover;
+    top: 50vh; 
+}
+.revBoxShdw {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.rotate5 {
+    transform: rotate(5deg);
+}
+.rotate10 {
+    transform: rotate(10deg);
+}
+.rotate15 {
+    transform: rotate(15deg);
+}
+.rotateMin5 {
+    transform: rotate(-5deg);
+}
+.rotateMin10 {
+    transform: rotate(-10deg);
+}
+.rotateMin15 {
+    transform: rotate(-15deg);
+}
+.delay1 {
+    animation-delay: 1s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+.delay3 {
+    animation-delay: 3s;
+}
+.delay4 {
+    animation-delay: 4s;
+}
+.delay5 {
+    animation-delay: 5s;
+}
+.start0 {
+    opacity: 0.0;
+}
