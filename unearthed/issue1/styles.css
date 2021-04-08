@@ -394,7 +394,7 @@ p.justify {
 } 
 @media screen and (min-width: 1400px) {   
 	p {
-		font-size: 0.9em;
+		font-size: 0.87em;
 		line-height: 1.3em;
 
 	}
