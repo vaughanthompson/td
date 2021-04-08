@@ -192,67 +192,50 @@ body, ul, table, form{
 .sj-book .page-number{
 	color:#999;
 	width:100%;
-	bottom:5px;
+	bottom:0;
 	position:absolute;
 	display:block;
 	text-align: center;
 	line-height:30px;
+	padding-top: 30px;
 	font-size:11px;
+	background: linear-gradient(to top, rgba(255,255,255,1.0),rgba(255,255,255,0.8),rgba(255,255,255,0.0));
 }
 
-.sj-book .table-contents{
-	font-size:16px;
-	width:300px;
-	margin:80px auto;
-	color:#ccc;
+.table-contents{
+	font-size:0.9em;
 }
 
-.sj-book .table-contents li{
+.table-contents li{
 	list-style:none;
-	line-height:25px;
 }
 
-.sj-book .table-contents span{
+.table-contents span{
 	float:right;
 }
 
-.sj-book .table-contents a{
+.table-contents a{
 	float:left;
-	width:100%;
+	width:90%;
 	clear:both;
 	text-decoration:none;
 	color:#333;
 	margin:2px 0;
-	padding:0 10px;
+	padding:6px 10px 5px 10px;
+	background: rgba(0,0,0,0.04);
+	border-radius:4px;
+
 }
 
-.sj-book .table-contents a:hover{
-	background:#CAD1EE;
+.table-contents a:hover{
+	background:#ff0000;
+	color:#fff;
 	float:left;
-	width:100%;
 	clear:both;
 	text-decoration:none;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	-o-border-radius:10px;
-	-ms-border-radius:10px;
-	border-radius:10px;
 }
 
-.sj-book .book-content .capital,
-.sj-book .book-content .no-indent{
-	text-indent: 0;
-}
 
-.sj-book .capital:first-letter {
-    display:block;
-    float:left;
-    font-size: 300%;
-    line-height: 70%;
-	margin-right: 6px;
-	margin-top: 7px;
-	margin-left:18px;
-}
 
 .ie8 .sj-book .even,
 .ie9 .sj-book .even{
@@ -281,7 +264,7 @@ img.divider {
 }
 
 
-div.content h1 {
+div.cover div.content h1 {
 	font-family: "sf";
 	font-weight: 500;
 	text-transform: none;
@@ -289,7 +272,7 @@ div.content h1 {
 	line-height: 1em;
 	text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 }
-div.content h3 {
+div.cover div.content h3 {
 	font-family: "bureau";
 	text-transform: uppercase;
 	font-size: 1.2em;
@@ -298,7 +281,7 @@ div.content h3 {
 	text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
 
 }
-div.content h4 {
+div.cover div.content h4 {
 	font-size: 1.1em;
 	letter-spacing: 0.04em;
 	line-height: 1.5em;
@@ -307,7 +290,9 @@ div.content h4 {
 
 div.cover {
 	background:url(assets/cover.jpg);
+	background-color: rgba(0,0,0,1.0);
 	background-size: 100% auto;
+	background-repeat: no-repeat;
 	height: 80vh;
 	display: flex;
 	align-items: flex-end;
@@ -322,6 +307,103 @@ div.cover div.content > * {
 div.content {
 	padding: 2vw 2vw 4vw 2vw;
 }
+
+div.even div.content {
+	padding: 2vw 4vw 4vw 2vw;
+}
+div.odd div.content {
+	padding: 2vw 2vw 4vw 4vw;
+}
 div.cover div.content {
 	padding: 2vw 10vw 4vw 2vw;
 }
+
+
+
+div.own-size {
+	overflow-y: auto !important;
+}
+
+div.goColumns2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+div.goColumns2 section {
+	flex-basis: 47%;
+}
+
+hr {
+	margin:1em 0 1em 0;
+}
+
+
+
+
+
+
+p {
+	font-size: 0.85em;
+}
+
+p.strong {
+	font-weight: 600;
+}
+
+p.justify {
+	text-align: justify;
+}
+
+@media screen and (min-width: 750px) {  
+	p {
+		font-size: 0.65em;
+		line-height: 1.2em;
+	}
+}  
+
+@media screen and (min-width: 950px) {  
+	p {
+		font-size: 0.7em;
+		line-height: 1.2em;
+	}
+}  
+
+@media screen and (min-width: 1100px) {   
+	p {
+		font-size: 0.75em;
+		line-height: 1.2em;
+
+	}
+} 
+
+@media screen and (min-width: 1200px) {   
+	p {
+		font-size: 0.80em;
+		line-height: 1.2em;
+
+	}
+} 
+
+@media screen and (min-width: 1300px) {   
+	p {
+		font-size: 0.85em;
+		line-height: 1.2em;
+
+	}
+} 
+@media screen and (min-width: 1400px) {   
+	p {
+		font-size: 0.9em;
+		line-height: 1.3em;
+
+	}
+} 
+@media screen and (min-width: 1700px) {   
+	p {
+		font-size: 1.15em;
+		line-height: 1.3em;
+
+	}
+} 
+
