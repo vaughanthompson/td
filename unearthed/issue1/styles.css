@@ -315,9 +315,14 @@ div.odd div.content {
 	padding: 2vw 2vw 4vw 4vw;
 }
 div.cover div.content {
-	padding: 2vw 20vw 3vw 2vw;
+	padding: 2vw 10vw 3vw 2vw;
 }
 
+@media screen and (min-width: 1400px) {   
+	div.cover div.content {
+		padding: 2vw 20vw 3vw 2vw;
+	}
+} 
 
 
 div.own-size {
