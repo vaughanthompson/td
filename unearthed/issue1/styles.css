@@ -282,7 +282,7 @@ div.cover div.content h3 {
 
 }
 div.cover div.content h4 {
-	font-size: 1.1em;
+	font-size: 1em;
 	letter-spacing: 0.04em;
 	line-height: 1.5em;
 }
@@ -315,7 +315,7 @@ div.odd div.content {
 	padding: 2vw 2vw 4vw 4vw;
 }
 div.cover div.content {
-	padding: 2vw 10vw 4vw 2vw;
+	padding: 2vw 10vw 3vw 2vw;
 }
 
 
