@@ -325,6 +325,7 @@ div.own-size {
 }
 
 div.goColumns2 {
+	clear: both;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -407,3 +408,21 @@ p.justify {
 	}
 } 
 
+
+
+
+
+/* images handling */
+div.masthead {
+	display: flex;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.75em;
+	border-bottom: 1px solid #efefef;
+}
+img.profile {
+	width:8vw;
+	margin-left: 2vw;
+	margin-right: 1vw;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+	transform: rotate(3deg);
+}
