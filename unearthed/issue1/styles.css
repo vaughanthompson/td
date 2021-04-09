@@ -493,22 +493,26 @@ div.teasers {
 	align-items: stretch;
 	justify-content: space-between;
 	height: 60vh;
-	flex: 1 1 auto;
 }
 
 div.tItem {
+	flex: 1 1 auto;
 	flex-basis: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	background-color: rgba(0,0,0,0.1);
 	position: relative;
-	background-position: top;
+	background-position: top left;
 	background-size: cover;
 }
 div.tItem:last-child {
 	margin-bottom: 0;
 }
 div.tItem > div {
+	background-color: rgba(0,0,0,0.5);
+}
+div.tItem > div:hover {
 	background-color: rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,0.2);
 }
 div.tItem > div,
 div.tItem > div a {
@@ -517,9 +521,15 @@ div.tItem > div a {
 	justify-content: flex-start;
 	height: 100%;
 	flex-basis: 100%;
+	color: rgba(255,255,255,1.0);
+	font-size: 1.2em;
+	text-decoration: none;
+	font-family: "bureau";
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 div.tItem > div a > * {
-	padding: 1vw;
+	padding: 1.5vw 1vw;
 }
 
 @media screen and (max-width: 1400px) {   
