@@ -314,9 +314,9 @@
                 turned: function(e, page, view) {
     
                     var book = $(this);
-    
-                    if (page==2 || page==3) {
-                       // book.turn('peel', 'br');
+                    //if (page==1 || page==2) {
+                    if (page==1) {
+                       book.turn('peel', 'br');
                     }
     
                     updateDepth(book);
