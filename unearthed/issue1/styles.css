@@ -530,6 +530,7 @@ div.tItem > div a {
 }
 div.tItem > div a > * {
 	padding: 1.5vw 1vw;
+	border: 1px solid red;
 }
 
 @media screen and (max-width: 1400px) {   
