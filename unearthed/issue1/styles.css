@@ -199,7 +199,7 @@ body, ul, table, form{
 	line-height:30px;
 	padding-top: 30px;
 	font-size:11px;
-	background: linear-gradient(to top, rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.0));
+	/*background: linear-gradient(to top, rgba(255,255,255,0.8),rgba(255,255,255,0.6),rgba(255,255,255,0.0));*/
 }
 
 .table-contents{
@@ -492,15 +492,15 @@ p.justify {
 } 
 @media screen and (min-width: 1400px) {   
 	p {
-		font-size: 0.87em;
-		line-height: 1.3em;
+		font-size: 0.9em;
+		line-height: 1.2em;
 
 	}
 } 
 @media screen and (min-width: 1700px) {   
 	p {
-		font-size: 1.15em;
-		line-height: 1.3em;
+		font-size: 1em;
+		line-height: 1.2em;
 
 	}
 } 
