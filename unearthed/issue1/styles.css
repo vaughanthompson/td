@@ -422,7 +422,12 @@ div.masthead {
 	border-bottom: 1px solid #dedede;
 }
 
-
+blockquote {
+	display: flex;
+	align-items: center;
+	margin:0 1em;
+	padding: 1em;
+}
 
 
 
