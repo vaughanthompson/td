@@ -266,6 +266,10 @@ img.divider {
 }
 
 
+div.page {
+	display: flex;
+}
+
 div.cover div.content h1,
 div.fullPgImg div.content h1 {
 	font-family: "sf";
@@ -303,10 +307,7 @@ div.fullPgImg div.content h4 {
 	line-height: 1.4em;
 	color: #ffffff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,1.0);
-
-
 }
-
 
 div.cover {
 	background-color: rgba(0,0,0,1.0);
@@ -317,12 +318,9 @@ div.cover {
 	align-items: flex-end;
 	justify-content: flex-start;
 }
-
-
 div.cover div.content > * {
 	color: rgba(255,255,255,1.0);
 }
-
 div.fullPgImg {
 	background-position: top;
 	background-size: cover;
@@ -331,6 +329,15 @@ div.fullPgImg {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
+}
+div.fullPgImgContent {
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
 }
 
 
@@ -366,6 +373,25 @@ div.fullPgImg div.content > div {
 div.fullPgImg div.content > div section:last-child {
 	align-self: flex-end;
 }
+div.fullPgImgContent div.content {
+	background-image: url(/unearthed/images/shared/grad-left.png);
+	background-position: top right;
+	background-repeat: repeat-y;
+	background-color: rgba(0,0,0,0.35);
+	align-self: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.fullPgImgContent div.content > div:first-child {
+	align-self: flex-start;
+}
+div.fullPgImgContent div.content > div:last-child {
+	align-self: flex-end;
+}
+
+
 @media screen and (min-width: 1400px) {   
 	div.cover div.content {
 		padding: 2vw 15vw 3vw 2vw;
@@ -419,7 +445,7 @@ div.masthead {
 	justify-content: space-between;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 blockquote {
