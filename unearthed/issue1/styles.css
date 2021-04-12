@@ -173,7 +173,6 @@ body, ul, table, form{
 }
 
 .sj-book .odd{
-
 	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
@@ -254,7 +253,9 @@ body, ul, table, form{
 
 
 
-
+.nowrap {
+	white-space: nowrap;
+}
 
 
 
@@ -265,32 +266,49 @@ img.divider {
 }
 
 
-div.cover div.content h1 {
+div.cover div.content h1,
+div.fullPgImg div.content h1 {
 	font-family: "sf";
 	font-weight: 500;
 	text-transform: none;
 	font-size: 2.6em;
 	line-height: 1.1em;
 	text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+	color: #ffffff;
 }
-div.cover div.content h3 {
+div.fullPgImg div.content h1 {
+	font-family: "bureau";
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 3.4em;
+	line-height: 1.1em;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+	color: #ffffff;
+}
+div.cover div.content h3,
+div.fullPgImg div.content h3 {
 	font-family: "bureau";
 	text-transform: uppercase;
 	font-size: 1.2em;
 	letter-spacing: 0.04em;
 	line-height: 1em;
 	text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+	color: #ffffff;
 
 }
-div.cover div.content h4 {
-	font-size: 1em;
+div.cover div.content h4,
+div.fullPgImg div.content h4 {
+	font-size: 1.1em;
 	letter-spacing: 0.04em;
-	line-height: 1.5em;
+	line-height: 1.4em;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1.0);
+
+
 }
 
 
 div.cover {
-	background:url(assets/cover.jpg);
 	background-color: rgba(0,0,0,1.0);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -305,6 +323,17 @@ div.cover div.content > * {
 	color: rgba(255,255,255,1.0);
 }
 
+div.fullPgImg {
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 80vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+
 div.content {
 	padding: 2vw 2vw 4vw 2vw;
 }
@@ -318,11 +347,33 @@ div.odd div.content {
 div.cover div.content {
 	padding: 2vw 10vw 3vw 2vw;
 }
-
+div.fullPgImg div.content {
+	padding: 2vw 4vw 4vw 2vw;
+	background-image: url(/unearthed/images/shared/grad-left.png);
+	background-position: top right;
+	background-repeat: repeat-y;
+	align-self: stretch;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+div.fullPgImg div.content > div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
+div.fullPgImg div.content > div section:last-child {
+	align-self: flex-end;
+}
 @media screen and (min-width: 1400px) {   
 	div.cover div.content {
-		padding: 2vw 20vw 3vw 2vw;
+		padding: 2vw 15vw 3vw 2vw;
 	}
+	div.fullPgImg div.content {
+		padding: 3vw 10vw 3vw 2vw;
+	}
+
 } 
 
 
