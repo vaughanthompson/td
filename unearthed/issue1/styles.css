@@ -417,8 +417,8 @@ div.goColumns2.thinL section:first-child {
 div.masthead {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 1.5em;
-	padding-bottom: 0.75em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
 	border-bottom: 1px solid #dedede;
 }
 
