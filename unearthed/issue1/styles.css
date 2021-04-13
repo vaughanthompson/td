@@ -672,8 +672,9 @@ div.tItem > div a > *:last-child {
 
 
 div#notLoaded {
-	margin-top: 150px;
+	margin-top: 250px;
 	padding:4vw;
+	width:70vw;
 	display: none;
 }
 @media screen and (max-width: 1000px),
