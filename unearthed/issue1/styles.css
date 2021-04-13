@@ -384,7 +384,7 @@ div.fullPgImgContent div.content {
 	background-image: url(/unearthed/images/shared/grad-left.png);
 	background-position: top right;
 	background-repeat: repeat-y;
-	background-color: rgba(0,0,0,0.35);
+	background-color: rgba(0,0,0,0.5);
 	align-self: stretch;
 	display: flex;
 	flex-wrap: wrap;
