@@ -317,7 +317,10 @@ div.cover {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
+	width: 100%;
+
 }
+
 div.cover div.content > * {
 	color: rgba(255,255,255,1.0);
 }
@@ -329,6 +332,8 @@ div.fullPgImg {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
+	width: 100%;
+	
 }
 div.fullPgImgContent {
 	background-position: top;
@@ -338,6 +343,8 @@ div.fullPgImgContent {
 	align-items: flex-start;
 	justify-content: flex-start;
 	align-self: stretch;
+	width: 100%;
+
 }
 
 
@@ -575,7 +582,7 @@ img.profile {
 .content picture img {
 	width: 100%;
 	height: auto;
-	box-shadow: 0 2px 8px 2px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 5px 0px rgba(0,0,0,0.2);
 }
 
 
