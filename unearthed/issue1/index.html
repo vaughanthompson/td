@@ -61,7 +61,7 @@
                 <a href="https://transdiesel.com"><img src="/unearthed/images/logo-4.png" class="hero animated fadeIn"></a>
             </div>
         </div>
-        <div><strong>TransDiesel Unearthed. Issue 1 April 2021</strong>
+        <div class="control"><strong>TransDiesel Unearthed. Issue 1 April 2021</strong>
             &nbsp;/&nbsp;
             <a href="#page/1">Cover</a>
             &nbsp;/&nbsp;
@@ -92,11 +92,18 @@
 <main>
     <div class="container">
 
-
+        
         
         <div class="slideHolder picturefill-background outro">
             <div class="slideContent insetShdw-light" id="s12">
                 <div>
+                    <div id="notLoaded">
+                        <h3>We're Sorry :(</h3>
+                        <br>
+                        <h4>Your browser isn't large enough to display the TransDiesel Unearthed flipbook newsletter properly.</h4>
+                        <br>
+                        <h4>Please jump on a laptop or device, or resize your screen to at least 1000px wide X 800px height and reload the page to experience the interactive magazine.</h4>
+                    </div>
                     <div id="canvas">
                         <div id="book-zoom">
                             <div class="sj-book">
@@ -113,6 +120,9 @@
             <span data-src="/unearthed/images/bgs/kraft-light/m.jpg" data-media="(min-width: 1000px)"></span>
             <span data-src="/unearthed/images/bgs/kraft-light/l.jpg" data-media="(min-width: 1200px)"></span>
         </div>
+
+
+       
 
 
 
@@ -377,7 +387,7 @@
 
    loadApp();    
 
-    enquire.register("screen and (min-width: 1000px)", {
+    enquire.register("screen and (min-width: 1000px) and (min-height: 780px)", {
         deferSetup : true,
         setup : function() {
             $('#canvas').css({visibility: ''});
@@ -390,7 +400,8 @@
         }
     });
 
-   
+    $(window).resize(function(){location.reload();});
+
     
     </script>
 
