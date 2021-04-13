@@ -398,6 +398,23 @@ div.fullPgImgContent div.content > div:last-child {
 	align-self: flex-end;
 }
 
+#end.fullPgImg {
+	justify-content: center;
+}
+#end div.content {
+	padding: 3vw;
+	justify-content: center !important;
+}
+#end section {
+	flex-basis: 100%;
+	text-align: center;
+}
+#end section:first-child {
+	align-self: flex-end;
+}
+#end img.logo {
+	max-width:300px;
+}
 
 @media screen and (min-width: 1400px) {   
 	div.cover div.content {
