@@ -16,8 +16,8 @@ body, ul, table, form{
 
 #canvas{
 	width: 90vw;
-	height: 80vh;
-	margin: 10px auto 10px auto;
+	height: 95vh;
+	margin: 5px auto 5px auto;
 }
 
 #book-zoom{
@@ -31,7 +31,7 @@ body, ul, table, form{
 
 .sj-book{
 	width:90vw;
-	height:80vh;
+	height:95vh;
 }
 
 
@@ -157,7 +157,7 @@ body, ul, table, form{
 
 .sj-book .own-size{
 	width:45vw;
-	height:80vh;
+	height:95vh;
 	background:url(/unearthed/images/bgs/kraft-light/l.jpg);
 	background-position: center;
 	background-size: cover;
@@ -313,12 +313,10 @@ div.cover {
 	background-color: rgba(0,0,0,1.0);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	height: 80vh;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
 	width: 100%;
-
 }
 
 div.cover div.content > * {
@@ -328,12 +326,10 @@ div.fullPgImg {
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 80vh;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
-	width: 100%;
-	
+	width: 100%;	
 }
 div.fullPgImgContent {
 	background-position: top;
@@ -344,7 +340,6 @@ div.fullPgImgContent {
 	justify-content: flex-start;
 	align-self: stretch;
 	width: 100%;
-
 }
 
 
@@ -686,3 +681,119 @@ screen and (max-height: 780px) {
 		display: none;
 	}
 } */
+
+
+
+/* height control */
+div.cover,
+div.fullPgImg,
+div.fullPgImgContent {
+	height: 100%;
+}
+@media screen and (max-height:600px) {   
+	#canvas,
+	.sj-book,
+	.sj-book .own-size{
+		height:95vh;
+	}
+	div.cover div.content {
+		padding: 2vw;
+	}
+	h1 {
+		font-size: 1.4em;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+	h4,h5 {
+		font-size: 1em;
+	}
+	div.masthead {
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	img.divider {
+		margin: 0.5em 0 0.5em 0;
+	}
+	hr {
+		margin-bottom: 0.5em;
+	}
+	blockquote {
+		margin:0;
+		padding: 0.5em;
+	}
+	picture {
+		width:80%; 
+		margin: 0px auto;
+	}
+	.content .videoHolder {
+		width:25vw;
+		padding:1em 2em 1.5em 2em;
+		margin:1em auto;
+	}
+	
+} 
+@media screen and (min-height:600px) {   
+	#canvas,
+	.sj-book,
+	.sj-book .own-size{
+		height:90vh;
+	}
+} 
+@media screen and (min-height:800px) {   
+	#canvas,
+	.sj-book,
+	.sj-book .own-size{
+		height:85vh;
+	}
+} 
+
+@media screen and (max-height:700px) {   
+	div.cover div.content h1,
+	div.fullPgImg div.content h1 {
+		font-size: 2em;
+		line-height: 1em;
+	}
+	div.fullPgImg div.content h1 {
+		font-size: 3.4em;
+		line-height: 1.1em;
+	}
+	div.cover div.content h3,
+	div.fullPgImg div.content h3 {
+		font-size: 1.1em;
+		letter-spacing: 0.06em;
+		line-height: 1em;
+	}
+	div.cover div.content h4,
+	div.fullPgImg div.content h4 {
+		font-size: 1em;
+		letter-spacing: 0.04em;
+		line-height: 1.3em;
+	}
+}
+
+
+
+
+
+
+/* overflow bg fixes */
+
+.even.p14 {
+	background-image:-webkit-linear-gradient(left, #111 95%, #000 100%);
+	background-image:-moz-linear-gradient(left, #111 95%, #000 100%);
+	background-image:-ms-linear-gradient(left, #111 95%, #000 100%);
+	background-image:-o-linear-gradient(left, #111 95%, #000 100%);
+	background-image:linear-gradient(left, #111 95%, #000 100%);
+}
+
+.xxx{
+	background-image:-webkit-linear-gradient(right, #222 95%, #000 100%);
+	background-image:-moz-linear-gradient(right, #222 95%, #000 100%);
+	background-image:-ms-linear-gradient(right, #222 95%, #000 100%);
+	background-image:-o-linear-gradient(right, #222 95%, #000 100%);
+	background-image:linear-gradient(right, #222 95%, #000 100%);
+}
