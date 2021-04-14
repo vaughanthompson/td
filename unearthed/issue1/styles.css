@@ -699,41 +699,7 @@ div.fullPgImgContent {
 	div.cover div.content {
 		padding: 2vw;
 	}
-	h1 {
-		font-size: 1.4em;
-	}
-	h2 {
-		font-size: 1.3em;
-	}
-	h3 {
-		font-size: 1.2em;
-	}
-	h4,h5 {
-		font-size: 1em;
-	}
-	div.masthead {
-		padding-bottom: 5px;
-		margin-bottom: 5px;
-	}
-	img.divider {
-		margin: 0.5em 0 0.5em 0;
-	}
-	hr {
-		margin-bottom: 0.5em;
-	}
-	blockquote {
-		margin:0;
-		padding: 0.5em;
-	}
-	picture {
-		width:80%; 
-		margin: 0px auto;
-	}
-	.content .videoHolder {
-		width:25vw;
-		padding:1em 2em 1.5em 2em;
-		margin:1em auto;
-	}
+
 	
 } 
 @media screen and (min-height:600px) {   
@@ -772,6 +738,41 @@ div.fullPgImgContent {
 		font-size: 1em;
 		letter-spacing: 0.04em;
 		line-height: 1.3em;
+	}
+	h1 {
+		font-size: 1.4em;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+	h4,h5 {
+		font-size: 1em;
+	}
+	div.masthead {
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+	}
+	img.divider {
+		margin: 0.5em 0 0.5em 0;
+	}
+	hr {
+		margin-bottom: 0.5em;
+	}
+	blockquote {
+		margin:0;
+		padding: 0.5em;
+	}
+	picture {
+		width:80%; 
+		margin: 0px auto;
+	}
+	.content .videoHolder {
+		width:25vw;
+		padding:1em 2em 1.5em 2em;
+		margin:1em auto;
 	}
 }
 
