@@ -748,8 +748,12 @@ div.fullPgImgContent {
 	h3 {
 		font-size: 1.2em;
 	}
-	h4,h5 {
-		font-size: 1em;
+	h4, h5 {
+		font-size: 0.9em;
+	}
+	p {
+		margin-top: 0.75em;
+		margin-bottom: 0.5em;
 	}
 	div.masthead {
 		padding-bottom: 5px;
