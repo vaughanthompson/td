@@ -774,6 +774,11 @@ div.fullPgImgContent {
 		padding:1em 2em 1.5em 2em;
 		margin:1em auto;
 	}
+	img.profile {
+		width:7vw;
+		margin-left: 1.5vw;
+		margin-right: 1vw;
+	}
 }
 
 
