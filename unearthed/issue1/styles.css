@@ -270,6 +270,11 @@ div.page {
 	display: flex;
 }
 
+h1.padRight  {
+	padding-right: 45%;
+	font-size: 3em !important;
+}
+
 div.cover div.content h1,
 div.fullPgImg div.content h1 {
 	font-family: "sf";
@@ -285,7 +290,7 @@ div.fullPgImg div.content h1 {
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 3.4em;
-	line-height: 1.1em;
+	line-height: 1em;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
 	color: #ffffff;
 }
@@ -586,7 +591,10 @@ img.profile {
 	margin-right: 1vw;
 	box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
-
+img.sig {
+	width:150px;
+	height: auto;
+}
 .content picture {
 	display: block;
 	padding: 0.5em;
@@ -724,8 +732,8 @@ div.fullPgImgContent {
 		line-height: 1em;
 	}
 	div.fullPgImg div.content h1 {
-		font-size: 3.4em;
-		line-height: 1.1em;
+		font-size: 3em;
+		line-height: 1em;
 	}
 	div.cover div.content h3,
 	div.fullPgImg div.content h3 {
