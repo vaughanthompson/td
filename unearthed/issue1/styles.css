@@ -605,7 +605,10 @@ img.sig {
 	height: auto;
 	box-shadow: 0 2px 5px 0px rgba(0,0,0,0.2);
 }
-
+img.noborder {
+	border: none !important;
+	box-shadow: none !important;
+}
 
 
 
