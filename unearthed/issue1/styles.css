@@ -678,20 +678,32 @@ div.tItem > div a > *:last-child {
 
 
 div#notLoaded {
-	margin-top: 250px;
 	padding:4vw;
 	width:70vw;
 	display: none;
 }
-/*@media screen and (max-width: 1000px),
-screen and (max-height: 780px) {   
+@media screen and (max-width: 1000px) {   
 	div#notLoaded {
 		display: block;
 	}
 	div.control {
 		display: none;
 	}
-} */
+	#canvas {
+		display: none;
+	}
+}
+@media screen and (max-height: 500px) {   
+	div#notLoaded {
+		display: block;
+	}
+	div.control {
+		display: none;
+	}
+	#canvas {
+		display: none;
+	}
+}
 
 
 
