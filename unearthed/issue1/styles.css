@@ -595,6 +595,11 @@ img.sig {
 	width:150px;
 	height: auto;
 }
+.inset {
+	width:70%;
+	height: auto;
+	margin: 1em auto;
+}
 .content picture {
 	display: block;
 	padding: 0.5em;
