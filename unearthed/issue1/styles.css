@@ -226,6 +226,11 @@ body, ul, table, form{
 	border-radius:4px;
 
 }
+.rev .table-contents a {
+	color: #fff;
+	background: rgba(255,255,255,0.04);
+
+}
 
 .table-contents a:hover{
 	background:#ff0000;
@@ -854,4 +859,13 @@ div.fullPgImgContent {
 	background-image:-ms-linear-gradient(right, #222 95%, #000 100%);
 	background-image:-o-linear-gradient(right, #222 95%, #000 100%);
 	background-image:linear-gradient(right, #222 95%, #000 100%);
+}
+
+
+.even.p2{
+	background-image:-webkit-linear-gradient(right, #111 95%, #000 100%);
+	background-image:-moz-linear-gradient(right, #111 95%, #000 100%);
+	background-image:-ms-linear-gradient(right, #111 95%, #000 100%);
+	background-image:-o-linear-gradient(right, #111 95%, #000 100%);
+	background-image:linear-gradient(right, #111 95%, #000 100%);
 }
