@@ -834,7 +834,7 @@ div.fullPgImgContent {
 
 /* overflow bg fixes */
 
-.even.p14 {
+.odd.p13 {
 	background-image:-webkit-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-moz-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-ms-linear-gradient(left, #111 95%, #000 100%);
