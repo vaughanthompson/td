@@ -183,38 +183,58 @@ div.nextArrow.higher a {
 
 div.fixedUI {
     position:fixed;
-    width:100%;
+    bottom:20px;
+    left:42%;
 }
 div.fixedUI div#strip {
    display: flex;
    justify-content: flex-start;
    align-items: center;
-   height:35px;
-   padding-top: 7px;
-   padding-bottom: 5px;
+   padding: 1px;
+   background-color: rgba(0,0,0,0.5);
+   border-radius: 8px;
+   box-shadow: 0 3px 4px 1px rgba(0,0,0,0.2);
 }
-div.logoChanger {
-    width: 150px;
-}
-div.logoChanger img {
-    width: 120px;
-    height: auto;
-    display: block;
-    padding: 0 15px 0 15px;
-}
-div#strip div:last-of-type {
-    align-self: flex-end;
-    margin-left: auto;
+
+div#strip nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    flex:0 0 20%;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 7px;
+
 }
 div#strip nav a {
-    margin-left:15px;
-    margin-right:15px;
-    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgba(255,255,255,0.75);
+    padding:8px 9px 7px 9px;
+    margin:1px;
+    font-size: 11px;
+    line-height: 11px;
+    flex-basis: 50%;
+    background-color: red;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
 }
-div#strip nav a.syncUpRight {
-    margin-right:60px;
-    transition: 1s;
+div#strip nav a:first-child {
+    border-radius: 6px 0 0 6px;
+    padding-left: 10px;
+    margin-right: 0px;
+
 }
+div#strip nav a:last-child {
+    border-radius: 0 6px 6px 0 ;
+    margin-left: 0px;
+    padding-right: 10px;
+
+}
+
 
 
 
