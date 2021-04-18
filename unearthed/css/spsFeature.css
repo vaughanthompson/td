@@ -183,15 +183,15 @@ div.nextArrow.higher a {
 
 div.fixedUI {
     position:fixed;
-    bottom:20px;
-    left:42%;
+    top:5px;
+    left:5px;
 }
 div.fixedUI div#strip {
    display: flex;
    justify-content: flex-start;
    align-items: center;
    padding: 1px;
-   background-color: rgba(0,0,0,0.5);
+   background-color: rgba(255,255,255,0.5);
    border-radius: 8px;
    box-shadow: 0 3px 4px 1px rgba(0,0,0,0.2);
 }
@@ -202,7 +202,7 @@ div#strip nav {
     align-items: stretch;
     justify-content: center;
     flex:0 0 20%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(0,0,0,0.3);
     border-radius: 7px;
 
 }
@@ -211,17 +211,30 @@ div#strip nav a {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    color: rgba(255,255,255,0.75);
+    color: rgba(0,0,0,0.8);
     padding:8px 9px 7px 9px;
     margin:1px;
     font-size: 11px;
     line-height: 11px;
     flex-basis: 50%;
-    background-color: red;
+	background-image:-webkit-linear-gradient(top, #fff 55%, #ddd 100%);
+	background-image:-moz-linear-gradient(top, #fff 55%, #ddd 100%);
+	background-image:-ms-linear-gradient(top, #fff 55%, #ddd 100%);
+	background-image:-o-linear-gradient(top, #fff 55%, #ddd 100%);
+	background-image:linear-gradient(top, #fff 55%, #ddd 100%);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
 }
+
+div#strip nav a:hover {  
+	background-image:-webkit-linear-gradient(bottom, #fff 55%, #ddd 100%);
+	background-image:-moz-linear-gradient(bottom, #fff 55%, #ddd 100%);
+	background-image:-ms-linear-gradient(bottom, #fff 55%, #ddd 100%);
+	background-image:-o-linear-gradient(bottom, #fff 55%, #ddd 100%);
+	background-image:linear-gradient(bottom, #fff 55%, #ddd 100%);
+}
+
 div#strip nav a:first-child {
     border-radius: 6px 0 0 6px;
     padding-left: 10px;
