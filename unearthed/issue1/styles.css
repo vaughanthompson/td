@@ -855,7 +855,7 @@ div.fullPgImgContent {
 
 /* overflow bg fixes */
 
-.odd.p13 {
+.odd.p15 {
 	background-image:-webkit-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-moz-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-ms-linear-gradient(left, #111 95%, #000 100%);
@@ -863,7 +863,7 @@ div.fullPgImgContent {
 	background-image:linear-gradient(left, #111 95%, #000 100%);
 }
 
-.odd.p19{
+.odd.p21{
 	background-image:-webkit-linear-gradient(right, rgb(50, 50, 50) 95%, #222 100%);
 	background-image:-moz-linear-gradient(right, rgb(50, 50, 50) 95%, #000 100%);
 	background-image:-ms-linear-gradient(right, rgb(50, 50, 50) 95%, #000 100%);
@@ -888,7 +888,7 @@ div.fullPgImgContent {
 	background-image:linear-gradient(right, #f00 95%, rgb(134, 6, 6) 100%);
 }
 
-.even.p14{
+.even.p16{
 	background-image:-webkit-linear-gradient(left, #f00 95%, rgb(134, 6, 6) 100%);
 	background-image:-moz-linear-gradient(left, #f00 95%, rgb(134, 6, 6) 100%);
 	background-image:-ms-linear-gradient(left, #f00 95%, rgb(134, 6, 6) 100%);
@@ -896,14 +896,14 @@ div.fullPgImgContent {
 	background-image:linear-gradient(left, #f00 95%, rgb(134, 6, 6) 100%);
 }
 
-.even.p20{
+.even.p22{
 	background-image:-webkit-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-moz-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-ms-linear-gradient(left, #111 95%, #000 100%);
 	background-image:-o-linear-gradient(left, #111 95%, #000 100%);
 	background-image:linear-gradient(left, #111 95%, #000 100%);
 }
-.odd.p21{
+.odd.p23{
 	background-image:-webkit-linear-gradient(right, #111 95%, #000 100%);
 	background-image:-moz-linear-gradient(right, #111 95%, #000 100%);
 	background-image:-ms-linear-gradient(right, #111 95%, #000 100%);
