@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.24" height="27.18" viewBox="0 0 40.24 27.18">
+  <defs>
+    <linearGradient id="f2106668-0b67-4b94-84e6-e08d3b121c16" data-name="New Gradient Swatch 9" x1="40.24" y1="10.66" x2="0" y2="10.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a00000"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <g id="ad5f0a79-5c44-4b04-8dc8-f0a0fa27cd47" data-name="Layer 2">
+    <g id="bc61aeb1-da40-44a3-a6cd-c50a799d3d12" data-name="Layer 1">
+      <g>
+        <polygon points="40.06 24.2 3.56 24.2 3.56 20.2 5.06 20.2 5.06 19.2 3.56 19.2 3.56 15.2 5.06 15.2 5.06 14.2 3.56 14.2 3.56 10.2 5.06 10.2 5.06 9.2 3.56 9.2 3.56 5.2 5.06 5.2 5.06 4.2 3.56 4.2 3.56 0.72 1.56 0.72 1.56 4.2 0.06 4.2 0.06 5.2 1.56 5.2 1.56 9.2 0.06 9.2 0.06 10.2 1.56 10.2 1.56 14.2 0.06 14.2 0.06 15.2 1.56 15.2 1.56 19.2 0.06 19.2 0.06 20.2 1.56 20.2 1.56 24.2 0.06 24.2 0.06 25.2 1.56 25.2 1.56 27.18 3.56 27.18 3.56 25.2 40.06 25.2 40.06 24.2" style="fill: #1a1a1a"/>
+        <path d="M40.24,21.32H33L21.58,3.75a1,1,0,0,0-1.2,0L8.93,21.32H0V17.78H7L17.77,1.33a4.54,4.54,0,0,1,6.42,0l.24.28L35,17.78h5.29Z" style="fill: url(#f2106668-0b67-4b94-84e6-e08d3b121c16)"/>
+      </g>
+    </g>
+  </g>
+</svg>

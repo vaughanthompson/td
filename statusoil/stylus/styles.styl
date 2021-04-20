@@ -1,0 +1,319 @@
+/* colors */
+
+// libs and default 3rd party
+@import 'nib'
+
+@import '../css/normalize.css'    
+@import '../fonts/museo/font.css'
+
+
+// vars
+brand1 = rgba(26,26,26, 1.0)
+brand2 = rgba(255,0,0, 1.0)
+brand3 = rgba(208,0,0, 1.0)
+brand4 = rgba(160,0,0, 1.0)
+
+white = rgba(255,255,255,1.0)
+whiteAlp75 = rgba(255,255,255,0.75)
+whiteAlp50 = rgba(255,255,255,0.5)
+whiteAlp25 = rgba(255,255,255,0.25)
+whiteAlp10 = rgba(255,255,255,0.1)
+whiteAlp05 = rgba(255,255,255,0.05)
+
+black = rgba(0,0,0,1.0)
+blackAlp75 = rgba(0,0,0,0.75)
+blackAlp50 = rgba(0,0,0,0.5)
+blackAlp25 = rgba(0,0,0,0.25)
+blackAlp10 = rgba(0,0,0,0.1)
+
+mainBG = rgba(26,26,26,1.0)
+
+fontStack = -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+padXL = 10vw
+padL = 5vw
+padM = 3vw
+padStd = 1.5vw
+marStd = 1.5vw
+padXS = 0.65vw
+marXS = 0.65vw
+padXXS = 0.3vw
+
+marXL = 10vw
+marL = 5vw
+marM = 3vw
+marStd = 1.5vw
+marXS = 0.65vw
+marXXS = 0.3vw
+
+navSpacer = 10vh
+navSpacerL = 15vh
+
+//responsive breakpoint & media queries
+mBreakPoint = 750px
+tBreakPoint = 1100px
+dBreakPoint = 1500px
+lgBreakPoint = 1900px
+
+phoneRule = "screen and (max-width: mBreakPoint )"
+tabletRule = "screen and (min-width: mBreakPoint) and (max-width: tBreakPoint )"
+desktopRule = "screen and (min-width: tBreakPoint) and (max-width: dBreakPoint )"
+lgdesktopRule = "screen and (min-width: dBreakPoint)"
+
+mtrigger = "screen and (max-width: tBreakPoint )"
+ttrigger = "screen and (min-width: mBreakPoint )"
+dtrigger = "screen and (min-width: tBreakPoint )"
+
+phLandscape = "screen and (max-width: mBreakPoint) and (orientation: landscape)"
+tbLandscape = "screen and (min-width: mBreakPoint) and (max-width: tBreakPoint) and (orientation: landscape)"
+
+ie = "all and (-ms-high-contrast: none), (-ms-high-contrast: active)"
+
+
+$hideItAll = none !important
+
+// responsive logos
+logoDimens = 40vw
+
+
+// misc blocks
+test = @block {
+    border: 1px solid blue
+}
+centerMe = @block {
+    margin: 0px auto
+}
+
+marginNo = @block {
+    margin: 0
+}
+marginM = @block {
+    margin-bottom: 2vh
+}
+marginL = @block {
+    margin-left: 2vw
+}
+marginR = @block {
+    margin-right: 2vw
+}
+marginT = @block {
+    margin-bottom: 4vh
+}
+marginBT = @block {
+    margin-bottom: 1.5vh
+}
+marginVT = @block {
+    margin-top: 2vh
+    margin-bottom: 2vh
+}
+marginALL = @block {
+    margin: 2vh
+}
+wh100 = @block {
+    width:100%
+    height:100%
+}
+
+
+
+
+// basic defaults
+html, body
+    width: 100%
+    height: 100%
+    font-family: fontStack
+    font-size: 16px
+body
+    background-color: mainBG
+    color: white
+    // background: linear-gradient(top, white, brand1)
+hr
+    border: none
+    border-bottom: 1px solid lightGrey
+
+
+body > header
+    overflow hidden
+    background-repeat: no-repeat
+    background-size: cover
+    @media mtrigger
+        background-color: rgba(100,0,0,1.0)
+        background-image: url(../images/bg0.jpg)
+        min-height: 40vh
+    @media ttrigger
+        background-color: rgba(150,0,0,1.0)
+        background-image: url(../images/bg1.jpg)
+        min-height: 40vw
+    @media dtrigger
+        background-color: rgba(200,0,0,1.0)
+        background-image: url(../images/bg1.jpg)
+        min-height: 30vw
+
+
+
+// layout c
+article > div, header, footer
+    padding: padXS padM padStd padM 
+main
+    padding: 0 padM 0 padM
+    display: block
+body > header
+    margin: padM padM 0 padM
+    padding: padM
+    display: flex
+    justify-content: space-between
+    @media mtrigger
+        flex-direction: column
+body > header > section
+    flex:0 1 38%
+    padding: padM 0
+body > header > section:last-child
+    text-align: right
+    @media mtrigger
+        text-align: left
+main > div
+    @media dtrigger
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: flex-start
+main > div > section
+    @media dtrigger 
+        flex-basis: 45%
+main > div > section.col
+    @media dtrigger 
+        flex-basis: 31%        
+
+
+
+
+// typo
+a:link, a:visited
+    color: white
+h1, h2, h3 ,h4
+    margin: 0
+    line-height: 1.4em
+    font-family: 'museoSL'
+h5 ,h6, p
+    margin: 0
+    line-height: 1.5em
+h1
+    font-size: 4em
+    line-height: 1em
+    margin-bottom: 0.5em
+    @media mtrigger
+        font-size: 3em
+h2
+    font-size: 3em
+    line-height: 1em
+    margin-bottom: 0.1em
+    text-transform: uppercase
+h3
+    font-size: 1.6em
+    line-height: 1.2em
+    margin-bottom: 0.4em  
+    font-weight: 500  
+h4
+    font-size: 1.3em
+    line-height: 1.2em
+    margin-bottom: 0.2em  
+    font-weight: 500  
+p
+    margin-bottom: 1em;
+
+
+// content
+article > header
+    padding-top: padM
+    @media dtrigger
+        padding-bottom: 0
+        padding-top: 0
+        min-height: 7vw
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+    @media ie
+        height: 100px
+
+
+
+
+
+
+// footer 
+footer > *
+    text-align: center
+
+footer img.logo
+    display: block
+    {centerMe}
+    width: 200px
+    height: auto
+footer p
+    font-size: 90%
+
+
+
+
+// fluff 
+div.gradient
+    background: linear-gradient(top, rgba(40,40,40,1.0), brand1)
+    padding-top: padM
+span.gradientLine
+    display: block
+    height: 4px
+    background: linear-gradient(left, brand2, brand4, brand4)
+    margin-top: marM
+    margin-bottom: marL
+a.lozenge img
+    width: 15vw
+    @media mtrigger
+        width: 25vh
+img.stripImage
+    max-width: 100%
+    height: auto
+    position: relative
+    top: -9.5vw 
+    margin-bottom: -10vw
+div.iconDiv
+    min-height: 60px
+    display: flex
+    align-items: center
+div.iconDiv span
+    width: 55px
+    height: 55px
+    margin-right: padXS 
+    display: flex
+    align-items: flex-start
+    justify-content: center
+div.iconDiv span img
+    width: auto
+    height 50px
+    @media ie 
+        width: 50px
+div.cta
+    margin-top: marM    
+div.cta a.button
+    display: block
+    background-color: green
+    background: linear-gradient(bottom, green, rgba(0,200,0,1.0))
+    padding: padL padM
+    border-radius: 1em
+    margin-bottom: marM
+    box-shadow: 0px 10px 10px #000000
+    text-align: center
+    font-weight: 700
+    text-decoration: none
+    font-size: 1.1em
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.5)
+    @media ttrigger
+        padding: padM padM
+    @media dtrigger
+        padding: padStd padM
+
+.color2
+    color: brand2
+.color3
+    color: brand3
+.color4
+    color: brand4    

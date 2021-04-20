@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.83" height="30" viewBox="0 0 29.83 30">
+  <defs>
+    <linearGradient id="a55725c5-2879-4027-88e9-f13fa7b5e845" data-name="New Gradient Swatch 9" x1="14.36" y1="9.08" x2="3.69" y2="9.08" gradientTransform="translate(4.16 -2.76) rotate(22.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a00000"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <g id="b44f7040-53fb-40d6-b278-dd42943495c9" data-name="Layer 2">
+    <g id="accb712a-fcfb-455b-95e1-969ab51d4da7" data-name="Layer 1">
+      <g>
+        <circle cx="9.02" cy="9.08" r="5.33" transform="translate(-2.79 4.14) rotate(-22.5)" style="fill: url(#a55725c5-2879-4027-88e9-f13fa7b5e845)"/>
+        <path d="M29.7,26.65,18.37,15.32a2,2,0,0,0-.55-.37,1.81,1.81,0,0,0-.73-.16,1.78,1.78,0,0,0-1.3.53,9.26,9.26,0,1,0-.39.39l-.25.25a1.81,1.81,0,0,0-.54,1.26,1.72,1.72,0,0,0,.14.73,1.81,1.81,0,0,0,.4.59L26.47,29.87a.44.44,0,0,0,.62,0l2.61-2.61A.43.43,0,0,0,29.7,26.65ZM9,16.23a7.16,7.16,0,1,1,7.16-7.15A7.15,7.15,0,0,1,9,16.23Z" style="fill: #1a1a1a"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+/* webfonts */
+
+@font-face {
+  font-family: 'museoSL';
+  src: url('../fonts/museo/museoslab-500.eot');
+  src: url('../fonts/museo/museoslab-500.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museo/museoslab-500.woff') format('woff'),
+       url('../fonts/museo/museoslab-500.ttf') format('truetype'),
+       url('../fonts/museo/museoslab-500.svg#museoSL') format('svg');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'museoSL';
+  src: url('../fonts/museo/museoslab-900.eot');
+  src: url('../fonts/museo/museoslab-900.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museo/museoslab-900.woff') format('woff'),
+       url('../fonts/museo/museoslab-900.ttf') format('truetype'),
+       url('../fonts/museo/museoslab-900.svg#museoSL') format('svg');
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'museoSL';
+  src: url('../fonts/museo/museoslab-1000.eot');
+  src: url('../fonts/museo/museoslab-1000.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/museo/museoslab-1000.woff') format('woff'),
+       url('../fonts/museo/museoslab-1000.ttf') format('truetype'),
+       url('../fonts/museo/museoslab-1000.svg#museoSL') format('svg');
+  font-weight: 1000;
+  font-style: normal;
+
+}
