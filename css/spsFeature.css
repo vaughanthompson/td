@@ -734,8 +734,8 @@ div.slideContent > div > article.vertical section.listContent {
 /* video */
 
 div.retroVideo {
-    left:2vw;
-    bottom:7vh;
+    left:3vw;
+    bottom:9vh;
     position: absolute;
     width:580px;
     height:380px;
