@@ -735,7 +735,7 @@ div.slideContent > div > article.vertical section.listContent {
 
 div.retroVideo {
     left:3vw;
-    bottom:5vh;
+    bottom:6vh;
     position: absolute;
     width:45vw;
     height:27vw;
@@ -768,7 +768,7 @@ div.theVideo {
     height: 18vw;
     top:4vw;
     left:5vw;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
 }
 div.vidHolder {
     display: flex;

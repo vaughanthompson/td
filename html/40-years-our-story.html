@@ -400,7 +400,7 @@
 
 
 
-        <div class="slideHolder picturefill-background extend">
+        <div class="slideHolder picturefill-background extend video">
 
             <div class="slideContent insetShdw-light extend" id="s3">
                 <div class="fullheight">
@@ -457,7 +457,10 @@
                 </div>
                 <div class="theVideo">
                     <div class="vidHolder">
-                       <h2>THE VIDEO CODE IN HERE WITH FALLBACK SCREEN CAP</h2> 
+                        <video id="bgvid1" class="hidden-xs" autoplay="" muted="" style="opacity: 1;">
+                            <source type="video/mp4" data-src="/40yr-assets/media/TDTruckRacing.mp4" src="/40yr-assets/media/TDTruckRacing.mp4">
+                            <source type="video/webm" data-src="/40yr-assets/media/TDTruckRacing.webm" src="/40yr-assets/media/TDTruckRacing.webm">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -1201,8 +1204,9 @@
 
 <!-- for bg video loop -->
 <script type="text/javascript">
+/*
     window.addEventListener("load", function() {
-        var bgv = document.getElementById("bgvid");
+        var bgv = document.getElementById("bgvid1");
 
         var visible = !!(bgv.offsetWidth ||
         bgv.offsetHeight ||
@@ -1217,7 +1221,7 @@
        bgv.load();
 
         var iterations = 1;
-        bgvid.addEventListener('ended', function () {
+        bgvid1.addEventListener('ended', function () {
             if (iterations < 3) {
                 this.currentTime = 0;
                 this.play();
@@ -1226,8 +1230,51 @@
         }, false);
 
     });
-    
+  */  
 </script>
+
+<!-- for bg video loop -->
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var bgv = document.getElementById("bgvid1");
+        var visible = !!(bgv.offsetWidth ||
+        bgv.offsetHeight ||
+        bgv.getClientRects().length);
+        if (visible) {
+        var children = bgv.getElementsByTagName("source");
+            for (var i = 0; i < children.length; ++i) {
+            children[i].src = children[i].getAttribute("data-src");
+            }
+        }
+        // set video to invisible to allow waypoint to trigger elegant fadein
+        $('video').css('opacity','0');
+
+        new Waypoint({
+        element: document.getElementsByClassName('video'),
+        handler: function(direction) {
+            if (direction === 'down') {
+                bgv.load();
+                $('video').fadeTo(3000,'1.0');
+            }
+            else {
+                //
+                $('video').fadeTo(1000,'0');
+            }
+        },
+            offset: '50%'
+        })
+
+        var iterations = 1;
+        bgvid1.addEventListener('ended', function () {
+            if (iterations < 2) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+    });
+</script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {
