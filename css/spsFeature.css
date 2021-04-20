@@ -270,6 +270,13 @@ footer img.brandID {
 
 
 /* z-indexes */
+div.theVideo {
+    z-index: 500;
+}
+div.containTV {
+    z-index: 750;
+}
+
 div.cutawayImgs {
     z-index: 1000;
 }
@@ -719,4 +726,58 @@ div.slideContent > div > article.vertical section.listContent {
 }
 .start0 {
     opacity: 0.0;
+}
+
+
+
+
+/* video */
+
+div.retroVideo {
+    left:3vw;
+    bottom:5vh;
+    position: absolute;
+    width:45vw;
+    height:27vw;
+}
+
+div.containTV {
+    height:27vw;
+    background-image: url(/40yr-assets/imgs/retro-tv.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+div.tvshadow {
+    height:27vw;
+    background-image: url(/40yr-assets/imgs/retro-tv-shdw.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+div.retroVideo img {
+    width:100%;
+    height: auto;
+}
+
+div.theVideo {
+    position: absolute;
+    width:30vw;
+    height: 18vw;
+    top:4vw;
+    left:5vw;
+    background-color: rgba(0,0,0,0.5);
+}
+div.vidHolder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+div.vidHolder > * {
+    text-align: center;
 }
