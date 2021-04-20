@@ -734,15 +734,15 @@ div.slideContent > div > article.vertical section.listContent {
 /* video */
 
 div.retroVideo {
-    left:3vw;
+    left:2vw;
     bottom:6vh;
     position: absolute;
-    width:45vw;
-    height:27vw;
+    width:580px;
+    height:380px;
 }
 
 div.containTV {
-    height:27vw;
+    height:380px;
     background-image: url(/40yr-assets/imgs/retro-tv.png);
     background-position: center;
     background-size: cover;
@@ -750,7 +750,7 @@ div.containTV {
 }
 
 div.tvshadow {
-    height:27vw;
+    height:380px;
     background-image: url(/40yr-assets/imgs/retro-tv-shdw.png);
     background-position: center;
     background-size: cover;
@@ -764,20 +764,19 @@ div.retroVideo img {
 
 div.theVideo {
     position: absolute;
-    width:30vw;
-    height: 18vw;
-    top:4vw;
-    left:5vw;
+    width:410px;
+    border: 1px solid red;
+    top:70px;
+    left:50px;
     background-color: rgba(0,0,0,0.2);
 }
 div.vidHolder {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    width:100%;
     height: 100%;
 
 }
 div.vidHolder > * {
     text-align: center;
+    width:100%;
+    height: auto;
 }
