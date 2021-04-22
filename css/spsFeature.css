@@ -743,15 +743,16 @@ div.retroVideo {
 
 div.containTV {
     height:380px;
-    background-image: url(/40yr-assets/imgs/retro-tv.png);
+    background-image: url(/40yr-assets/imgs/retro-tv-4x3.png);
     background-position: center;
     background-size: cover;
     position: relative;
+    opacity:1.0;
 }
 
 div.tvshadow {
     height:380px;
-    background-image: url(/40yr-assets/imgs/retro-tv-shdw.png);
+    background-image: url(/40yr-assets/imgs/retro-tv-4x3-shdw.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -764,9 +765,9 @@ div.retroVideo img {
 
 div.theVideo {
     position: absolute;
-    width:415px;
-    top:70px;
-    left:47px;
+    width:370px;
+    top:50px;
+    left:67px;
     background-color: rgba(0,0,0,0.2);
 }
 div.vidHolder {
