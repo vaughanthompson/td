@@ -273,6 +273,9 @@ footer img.brandID {
 div.theVideo {
     z-index: 500;
 }
+div.tvshadow {
+    z-index: 700;
+}
 div.containTV {
     z-index: 750;
 }
@@ -734,15 +737,20 @@ div.slideContent > div > article.vertical section.listContent {
 /* video */
 
 div.retroVideo {
-    left:3vw;
-    bottom:9vh;
+    left:4vw;
+    bottom:8vh;
     position: absolute;
     width:580px;
-    height:380px;
+    height:400px;
+}
+
+div.retroVideo2 {
+    left:10vw;
+    bottom:8vh;
 }
 
 div.containTV {
-    height:380px;
+    height:400px;
     background-image: url(/40yr-assets/imgs/retro-tv-4x3.png);
     background-position: center;
     background-size: cover;
@@ -751,11 +759,19 @@ div.containTV {
 }
 
 div.tvshadow {
-    height:380px;
+    height:400px;
     background-image: url(/40yr-assets/imgs/retro-tv-4x3-shdw.png);
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+div.containTV2 {
+    background-image: url(/40yr-assets/imgs/retro-tv-4x3-trinitron.png);
+}
+
+div.tvshadow2 {
+    background-image: url(/40yr-assets/imgs/retro-tv-4x3-trinitron-shdw.png);
 }
 
 div.retroVideo img {

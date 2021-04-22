@@ -450,8 +450,8 @@
             </div>
 
             <div class="retroVideo">
-                <div class="containTV">
-                    <div class="tvshadow">
+                <div class="tvshadow">
+                    <div class=" containTV">
                         &nbsp;
                     </div>
                 </div>
@@ -657,7 +657,7 @@
                         <section class="artwork">
                             <div class="land1 feat1 bgPicSoftLight revBoxShdw delay1" style="left:8vw; margin-top: -30%;background-image:url(/40yr-assets/photos/1998-bg.jpg);">&nbsp;</div>
                             
-                            <div class="land1 feat2 revBoxShdw rotateMin5 delay2" style="left:19vw;margin-top: -15%;background-image:url(/40yr-assets/photos/1998.jpg);">&nbsp;</div>
+                            <div class="land1 feat2 revBoxShdw rotateMin5 delay2" style="left:20vw;margin-top: -10%;background-image:url(/40yr-assets/photos/1998.jpg);">&nbsp;</div>
 
                             <div class="year delay1" style="bottom:35vh;left:5vw;margin-top:-25%;">
                                 <h2 class="Helv big black">1998</h2>
@@ -666,6 +666,22 @@
                     </article>
                 </div>
 
+            </div>
+
+            <div class="retroVideo retroVideo2">
+                <div class="tvshadow tvshadow2">
+                    <div class="containTV containTV2">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="theVideo">
+                    <div class="vidHolder">
+                        <video id="bgvid2" class="hidden-xs fitVid" autoplay="" muted="" style="opacity: 1;">
+                            <source type="video/mp4" data-src="/40yr-assets/media/TDTruckRacing4x3.mp4" src="/40yr-assets/media/TDTruckRacing4x3.mp4">
+                            <source type="video/webm" data-src="/40yr-assets/media/TDTruckRacing4x3.webm" src="/40yr-assets/media/TDTruckRacing4x3.webm">
+                        </video>
+                    </div>
+                </div>
             </div>
 
             <div class="cutawayImgs">
@@ -1266,6 +1282,48 @@
 
         var iterations = 1;
         bgvid1.addEventListener('ended', function () {
+            if (iterations < 4) {
+                this.currentTime = 0;
+                this.play();
+                iterations ++;
+            }
+        }, false);
+    });
+</script>
+
+<!-- for bg video loop -->
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var bgv = document.getElementById("bgvid2");
+        var visible = !!(bgv.offsetWidth ||
+        bgv.offsetHeight ||
+        bgv.getClientRects().length);
+        if (visible) {
+        var children = bgv.getElementsByTagName("source");
+            for (var i = 0; i < children.length; ++i) {
+            children[i].src = children[i].getAttribute("data-src");
+            }
+        }
+        // set video to invisible to allow waypoint to trigger elegant fadein
+        $('video').css('opacity','0');
+
+        new Waypoint({
+        element: document.getElementsByClassName('video'),
+        handler: function(direction) {
+            if (direction === 'down') {
+                bgv.load();
+                $('video').fadeTo(3000,'1.0');
+            }
+            else {
+                //
+                $('video').fadeTo(1000,'0');
+            }
+        },
+            offset: '50%'
+        })
+
+        var iterations = 1;
+        bgvid2.addEventListener('ended', function () {
             if (iterations < 4) {
                 this.currentTime = 0;
                 this.play();
