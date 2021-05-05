@@ -517,18 +517,18 @@ ul.slideItems li {
     align-items: flex-start;
     text-align:left ;
 }
-ul.slideItems li div:first-child {
+ul.slideItems li > div:first-child {
     flex-basis: 15%;
 }
-ul.slideItems li div:last-child {
+ul.slideItems li > div:last-child {
     border-top: 1px solid rgba(255,255,255,0.9);
     padding-right: 1vw;
 }
-ul.slideItems li div {
+ul.slideItems li > div {
     flex-basis: 90%;
     padding: 1.1em 0 1.2em 0;
 }
-div.rev ul.slideItems li div:last-child {
+div.rev ul.slideItems li > div:last-child {
     border-top: 1px solid rgba(26,26,26,1.0);
 }
 
@@ -795,4 +795,85 @@ div.vidHolder > * {
     text-align: center;
     width:100%;
     height: auto;
+}
+
+
+/* video and custom image handling */
+
+
+
+.pbVideo {
+    position: relative;
+    padding-bottom: 55%;
+    padding-top: 0;
+    height: 0;
+    margin-bottom: 1em;
+}
+
+.pbVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pbVideo.styled {
+    border:3px solid rgba(255,255,255,1.0);
+    box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.5);
+}
+
+.hidden-xs {
+    display: none
+}
+@media screen and (min-width: 1000px) {
+    .hidden-xs {
+        display: block
+    }
+}
+
+div#vidHolder {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+video.hidden-xs {
+    width: 100%;
+    height: auto;
+}
+
+ 
+
+@media screen and (max-width: 1200px) {
+    video.hidden-xs {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* added to support CMS article markup */
+article.video div.imgTeaser > div.scontain {
+    z-index: 2000;
+}
+div.vidCover {
+    z-index: 1000; 
+    background-color:rgba(0,0,0,0.1); 
+    position: absolute; 
+    width:100%; 
+    height: 100%;
+}
+div.vidCover.dark {
+    background-color:rgba(0,0,0,0.5); 
+}
+div.vidCover.light {
+    background-color:rgba(255,255,255,0.5); 
+}
+
+
+.insetSomething {
+    padding: 1vw;
 }
