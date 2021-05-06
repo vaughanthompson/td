@@ -156,6 +156,8 @@
     var tabOffset = -350;
     $('#fixedRight').hide();
     $('.logos').hide();
+    $('.hero').show(); 
+
     var waypoint = new Waypoint({
         element: document.getElementById('intro'),
         handler: function (direction) {
@@ -260,7 +262,6 @@
     });  
 
     
-
 
 
 
