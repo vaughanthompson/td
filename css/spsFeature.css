@@ -436,8 +436,12 @@ div.fullheight {
     padding:0 !important;
     height: 110vh !important;
 }
-
-
+.flexibleH {
+    height: auto !important;
+}
+.flexibleH section.listContent {
+    padding-bottom: 35vh !important;
+}
 
 
 @media screen and (max-width: 750px) {
@@ -477,6 +481,7 @@ div.fullheight {
         position: relative;
         height:125vh;
     }
+
     div.slideContent > div {
         height:80vh;
     }
