@@ -273,7 +273,7 @@
                 $('.logo1').show(); 
             }
             else {
-                $('.logo1').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
@@ -283,12 +283,12 @@
         element: document.getElementById('s4'),
         handler: function (direction) {
             if (direction === 'down') {  
-                $('.logo1').hide();
+                $('.logos').hide(); 
                 $('.logo1R').show(); 
             }
             else {
                 //$('.logo1').fadeTo(500,1.0); 
-                $('.logo1R').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
@@ -298,12 +298,12 @@
         element: document.getElementById('s6'),
         handler: function (direction) {
             if (direction === 'down') {  
-                $('.logo1R').hide(); 
+                $('.logos').hide(); 
                 $('.logo2').show();  
             }
             else {
                 //$('.logo1').fadeTo(500,1.0); 
-                $('.logo2').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
@@ -313,12 +313,12 @@
         element: document.getElementById('s8'),
         handler: function (direction) {
             if (direction === 'down') {  
-                $('.logo2').hide(); 
+                $('.logos').hide(); 
                 $('.logo3').show(); 
             }
             else {
                 //$('.logo2').fadeTo(500,1.0); 
-                $('.logo3').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
@@ -328,12 +328,12 @@
         element: document.getElementById('s9'),
         handler: function (direction) {
             if (direction === 'down') {  
-                $('.logo3').hide(); 
+                $('.logos').hide(); 
                 $('.logo4').show(); 
             }
             else {
                 //$('.logo2').fadeTo(500,1.0); 
-                $('.logo4').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
@@ -344,12 +344,12 @@
         element: document.getElementById('s10'),
         handler: function (direction) {
             if (direction === 'down') { 
-                $('.logo4').hide(); 
+                $('.logos').hide(); 
                 $('.hero').show(); 
             }
             else {
                 //$('.logo3').fadeTo(500,1.0); 
-                $('.hero').hide(); 
+                $('.logos').hide(); 
             }
         },
         group: 'logo-changer',
