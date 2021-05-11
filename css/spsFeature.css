@@ -481,9 +481,12 @@ div.fullheight {
     footer > div {
         flex-wrap: nowrap;
         flex-direction: column;
+
     }
     footer > div section {
         flex-basis: 100%;
+        padding: 3vw !important;
+
     }
     img.offset-paper {
         display: none;
@@ -680,6 +683,18 @@ div.slideContent > div > article.vertical section.listContent {
     }
     section.listContent {
         padding:10vw 5vw 15vw 5vw !important;
+    }
+    .flexibleH section.listContent {
+        padding-bottom: 15vh !important;
+    }
+    div.slideContent > div > article.vertical section.listContent {
+        width:auto;
+        padding: 0;
+    }
+    div.slideContent > div > article.insetContent {
+        width:auto;
+        padding:10vw 5vw 15vw 5vw !important;
+
     }
     ul.slideItems {
         margin:0;
@@ -939,7 +954,15 @@ video.hidden-xs {
     height: auto;
 }
 
- 
+div.FSvideo {
+    height: 90vh !important;
+}
+
+@media screen and (max-width: 750px) {
+    div.FSvideo {
+        height: auto !important;
+    }
+} 
 
 @media screen and (max-width: 1200px) {
     video.hidden-xs {
