@@ -476,7 +476,7 @@ div.fullheight {
 
     div.slideContent > div {
         display: block;
-        padding: 5vw;
+        padding: 3vw !important;
     }
     footer > div {
         flex-wrap: nowrap;
