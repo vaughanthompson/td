@@ -679,7 +679,7 @@ div.slideContent > div > article.vertical section.listContent {
         display: none;
     }
     section.listContent {
-        padding:10vw 5vw 30vw 5vw !important;
+        padding:10vw 5vw 15vw 5vw !important;
     }
     ul.slideItems {
         margin:0;
@@ -746,6 +746,14 @@ div.slideContent > div > article.vertical section.listContent {
     background-size: cover;
     top: 50vh; 
 }
+.vintage-mobile {
+    width:70vw !important;
+    height: 70vw;
+    border-radius:4vw;
+    box-shadow: 0 0 30px rgba(0,0,0,1.0);
+    background-size: cover;
+    margin: 2em auto 1em auto;
+}
 .land1 {
     width:25vw !important;
     height: 17vw;
@@ -753,6 +761,14 @@ div.slideContent > div > article.vertical section.listContent {
     box-shadow: 0 0 40px rgba(0,0,0,1.0);
     background-size: cover;
     top: 50vh; 
+}
+.land1-mobile {
+    width:70vw;
+    height: 50vw;
+    border-radius:3vw;
+    box-shadow: 0 0 30px rgba(0,0,0,1.0);
+    background-size: cover;
+    margin: 2em auto 1em auto;
 }
 .land2 {
     width:30vw !important;
