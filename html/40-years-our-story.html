@@ -39,7 +39,7 @@
 
 
 
-<div class="fixedUI">
+<div class="fixedUI mHide">
     <div id="strip">
         <div>
             <div class="logoChanger">
@@ -254,8 +254,12 @@
                 <div>
                     <article class="singleCol">
                         <section>
+                            <p class="dHide note"><strong>Viewing mobile version.</strong><br>Thanks for checking out our 40th celebration timeline. Visit this page on a desktop to get a more interactive experience!</p>
                             <div class="insetContent">
                                 <img src="/40yr-assets/temp/Asset 2.svg">
+                                <div class="insetContent dHide">
+                                    <img src="/40yr-assets/imgs/rev/logo-4.svg">
+                                </div>
                             </div>
                         </section>
                     </article>
@@ -449,7 +453,7 @@
                 </div>
             </div>
 
-            <div class="retroVideo">
+            <div class="retroVideo mHide">
                 <div class="tvshadow">
                     <div class=" containTV">
                         &nbsp;
@@ -676,7 +680,7 @@
 
             </div>
 
-            <div class="retroVideo retroVideo2">
+            <div class="retroVideo retroVideo2 mHide">
                 <div class="tvshadow tvshadow2">
                     <div class="containTV containTV2">
                         &nbsp;
@@ -737,7 +741,7 @@
                                         <h2>2004</h2>
                                     </div>
                                     <div>
-                                        <p>Time for a freshen up. Transmissions & Diesels rebranded and now known as TransDiesel Ltd. Plus with interest from abroad we established Terrequipe SARL in New Calidonia with the Terex Distributorship. Back home we did the same for the NZ distributorship of Terex crushing and screening products.</p>                                       
+                                        <p>Time for a freshen up. Transmissions & Diesels rebranded and now known as TransDiesel Ltd. Plus with interest from abroad we established Terrequipe SARL in New Caledonia with the Terex Distributorship. Back home we did the same for the NZ distributorship of Terex crushing and screening products.</p>                                       
                                     </div>
                                 </li>
                                 <li>
@@ -1157,8 +1161,8 @@
 
 
              <!-- for video -->
-             <div class="vidCover"></div>
-             <div id="vidHolder"  style="height: 90vh;">
+             <div class="vidCover mHide"></div>
+             <div id="vidHolder"  style="height: 90vh;" class="mHide">
                  <video id="bgvid3" class="hidden-xs " autoplay="" muted="" style="opacity: 1;">
                      <source type="video/mp4" data-src="/40yr-assets/media/VolvoYanmar.mp4" src="/40yr-assets/media/VolvoYanmar.mp4">
                      <source type="video/webm" data-src="/40yr-assets/media/VolvoYanmar.webm" src="/40yr-assets/media/VolvoYanmar.webm">
@@ -1277,46 +1281,20 @@
 <script type="text/javascript" src="/40yr-assets/js/inview.js"></script>
 <script type="text/javascript" src="/40yr-assets/js/custom.js"></script>
 
-<!-- for bg video loop -->
-<script type="text/javascript">
-/*
-    window.addEventListener("load", function() {
-        var bgv = document.getElementById("bgvid1");
 
-        var visible = !!(bgv.offsetWidth ||
-        bgv.offsetHeight ||
-        bgv.getClientRects().length);
 
-        if (visible) {
-        var children = bgv.getElementsByTagName("source");
-            for (var i = 0; i < children.length; ++i) {
-            children[i].src = children[i].getAttribute("data-src");
-            }
-        }
-       bgv.load();
 
-        var iterations = 1;
-        bgvid1.addEventListener('ended', function () {
-            if (iterations < 3) {
-                this.currentTime = 0;
-                this.play();
-                iterations ++;
-            }
-        }, false);
-
-    });
-  */  
-</script>
 
 <!-- for bg video loop -->
 <script type="text/javascript">
-    window.addEventListener("load", function() {
-        var bgv = document.getElementById("bgvid1");
-        var visible = !!(bgv.offsetWidth ||
-        bgv.offsetHeight ||
-        bgv.getClientRects().length);
+
+window.addEventListener("load", function() {
+        var bgv1 = document.getElementById("bgvid1");
+        var visible = !!(bgv1.offsetWidth ||
+        bgv1.offsetHeight ||
+        bgv1.getClientRects().length);
         if (visible) {
-        var children = bgv.getElementsByTagName("source");
+        var children = bgv1.getElementsByTagName("source");
             for (var i = 0; i < children.length; ++i) {
             children[i].src = children[i].getAttribute("data-src");
             }
@@ -1328,7 +1306,7 @@
         element: document.getElementsByClassName('video'),
         handler: function(direction) {
             if (direction === 'down') {
-                bgv.load();
+                bgv1.load();
                 $('video').fadeTo(3000,'1.0');
             }
             else {
@@ -1348,6 +1326,8 @@
             }
         }, false);
     });
+    
+    
 </script>
 
 <!-- for bg video loop -->
