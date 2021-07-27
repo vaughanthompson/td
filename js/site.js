@@ -212,6 +212,14 @@
 
 
 
+    /* lubematch show/hide */
+    $('#lubeMatch').hide();
+    $('#lubeMatchTrigger').click(function(){
+        $('#lubeMatch').slideToggle(500);
+        $(this).html(($(this).html()=="Try it"?"Close":"Try it"));
+        return false;
+    });
+
     
 
 }); 

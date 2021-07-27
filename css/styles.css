@@ -4612,6 +4612,27 @@ main.brand-micro .grid.gridRow a h3 {
     header.brand-header nav a:visited {
         font-size:1.05em;
     }
+    div.brandSubHead {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(/shell-micro/images/lubematch-bg_01.png);
+        background-size: 100% auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    } 
+    div.brandSubHead > * {
+        flex-basis: 50%;
+    }
+    div.brandSubHead > section {
+        padding-bottom: 1.5em;
+    }  
+    div.brandSubHead > aside {
+        /* align-self: flex-end;*/
+        flex-basis: 40%;
+        /* text-align: center; */
+
+
+    } 
 
 
 }

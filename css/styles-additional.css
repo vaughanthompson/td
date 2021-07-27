@@ -385,3 +385,108 @@ div#strip21 a.cart.active:hover i {
 @media screen and (min-width: 1300px) {
     a.fallbackSearch {display:none;}
  }  
+
+
+
+
+
+
+ /* lubecheck on shell brand pages */
+ .iframeContainer {
+    padding:3vw 3vw 5vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/shell-micro/images/lubematch-bg_02.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.iframe {
+    padding: 0.5vw;
+    flex-basis:45%;
+    opacity:0.97;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+.iframeSupport {
+    flex-basis:40%;                
+    padding-top: 40vw;
+}
+
+.lubeSearchiFrame {
+    width: 100%;
+    height: 120vh;
+}
+div.speechBubble {
+    padding:1em 1.5em 1.5em 1.5em;
+    display: inline-block;
+    position:relative;
+    margin:0 1.5em 2em 0;
+    background:rgba(255,255,255,1.0);
+    border:1px solid rgba(100,100,100,1.0);
+    /*box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);*/
+    text-align: left;
+}
+
+
+div.speechBubble div.sideBySide {
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 0.7em;
+}
+
+div.speechBubble h2 {
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+div.speechBubble h2 span {
+    color:rgba(239,10,10,1.0);
+}
+div.speechBubble p {
+    margin: 0;
+}
+div.speechBubble a.ctaButton {
+   min-width:60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .iframeContainer {
+        display: none;
+    }
+    div.speechBubble {
+        border-radius: 10px;
+        border-color: rgba(0,0,0,0.3);
+    }
+    div.speechBubble div.sideBySide {
+        justify-content: space-between;
+        flex-direction: column;
+    }                
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+    div.speechBubble {
+        padding:0.2em 1.5em 0 1.5em;
+        max-width: 75%;
+        margin:0em 0 2em 0; 
+        border-top: none;
+        border-right: none;
+        border-bottom: none; 
+    }
+
+    div.speechBubble::after {   
+        content:"";
+        position:absolute;
+        bottom:-30px; /* value = - border-top-width - border-bottom-width */
+        left:-1px; /* controls horizontal position */
+        border-width:20px 20px 0 0px; /* vary these values to change the angle of the vertex */
+        border-style:solid;
+        border-color:rgba(239,10,10,1.0) transparent;
+        /* reduce the damage in FF3.0 */
+        display:block;
+        width:0;
+    }
+ 
+}
