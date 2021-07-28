@@ -4615,20 +4615,20 @@ main.brand-micro .grid.gridRow a h3 {
     div.brandSubHead {
         display: flex;
         justify-content: space-between;
-        background-image: url(/shell-micro/images/lubematch-bg_01.png);
+        background-image: url(/shell-micro/images/lubematch-bg2_01.png);
         background-size: 100% auto;
         background-position: bottom;
         background-repeat: no-repeat;
     } 
     div.brandSubHead > * {
-        flex-basis: 50%;
+        flex-basis: 45%;
     }
     div.brandSubHead > section {
         padding-bottom: 1.5em;
     }  
     div.brandSubHead > aside {
         /* align-self: flex-end;*/
-        flex-basis: 40%;
+        flex-basis: 42%;
         /* text-align: center; */
 
 
