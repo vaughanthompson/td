@@ -504,7 +504,7 @@ div.speechBubble a.ctaButton {
     padding:2vh;
 }
 .featurette > div {
-    padding:2vw 4vw;
+    padding:3vw 4vw;
     flex-basis:50%;
     background-color: rgba(255,255,255,0.95); 
 }
@@ -512,10 +512,11 @@ div.speechBubble a.ctaButton {
     flex-basis:70%;
     width:auto;
     background-color: rgba(255,255,255,0.7); 
+    background-repeat: no-repeat;
 }
 
 .blockStyle {
-    font-size: 4em  !important;
+    font-size: 3.5em  !important;
     font-family: 'bureau';
     color:rgba(239,10,10,1.0) !important;
 }
@@ -558,14 +559,19 @@ ul.featureItems li h4 {
     .featurette > div:first-of-type {
         flex-basis:50%;
         width:30%;
+        background-image: url(/shell-micro/landing-fleet/Shell-Rimula-R4-L.png);
         background-color: rgba(255,255,255,0.7); 
+        background-position: 4vw 27vh;
+        background-size: auto 70%;
     }
 }
 @media only screen and (min-width: 1100px) {
     .featurette > div:first-of-type {
         flex-basis:70%;
         width:25%;
-        background-color: rgba(255,255,255,0.7); 
+        background-color: rgba(255,255,255,0.8); 
+        background-size: auto 90%;
+        background-position: 115% center;
     }
     .featurette > div {
         padding:4vw 2vw;
