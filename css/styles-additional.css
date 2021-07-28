@@ -561,8 +561,8 @@ ul.featureItems li h4 {
         width:30%;
         background-image: url(/shell-micro/landing-fleet/Shell-Rimula-R4-L.png);
         background-color: rgba(255,255,255,0.7); 
-        background-position: 4vw 27vh;
-        background-size: auto 70%;
+        background-position: 50% 26vh;
+        background-size: auto 60%;
     }
 }
 @media only screen and (min-width: 1100px) {
@@ -570,8 +570,8 @@ ul.featureItems li h4 {
         flex-basis:70%;
         width:25%;
         background-color: rgba(255,255,255,0.8); 
-        background-size: auto 90%;
-        background-position: 115% center;
+        background-size: auto 80%;
+        background-position: 104% center;
     }
     .featurette > div {
         padding:4vw 2vw;
