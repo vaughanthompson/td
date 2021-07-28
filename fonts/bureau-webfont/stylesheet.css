@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'bureau';
+    src: url('bureau_grot_compressed_bold.woff2') format('woff2'),
+         url('bureau_grot_compressed_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
