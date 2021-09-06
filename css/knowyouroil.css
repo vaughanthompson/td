@@ -34,8 +34,6 @@ main h2 {
 
 
 
-
-
 /* layout */
 header.brand-header {
     position:relative;
@@ -95,6 +93,22 @@ section.inCar {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+article.footnote div.scontain {
+    justify-content: center;
+}
+article.footnote p {
+    text-align:justify;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+@media screen and (min-width: 750px) {
+    article.footnote section {
+        flex-basis: 75%;
+    }
+}
+
 
 
 div.fullheight {
@@ -160,11 +174,10 @@ div.insetContent {
         padding-bottom:10vw;
     }
 
-}
-
-@media screen and (min-width: 750px) {
 
 }
+
+
 
 @media screen and (min-width:1100px) {
     main.paddonFeature article.col2.vid section:first-child {
@@ -186,7 +199,10 @@ div.insetContent {
 
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (max-width:1100px) {
+    section.inCar {
+        height:40vh;
+    }
 }  
 
 
