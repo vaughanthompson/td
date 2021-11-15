@@ -85,6 +85,54 @@
 </nav>
 
 
+
+<!-- modal / takeover -->
+<style>
+    div.fullPageOverlay {
+        width:100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.9);
+        position: fixed;
+        z-index: 2247483639;
+
+    }
+    div.fullPageOverlay div.content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.fullPageOverlay div.content > div {
+        text-align: center;
+    }
+    div.fullPageOverlay img {
+        max-height: 50vh;
+        width: auto;
+        margin-bottom: 50px;
+    }
+    @media screen and (max-width:1000px) {
+        div.fullPageOverlay img {
+            max-height: none;
+            width: 85vw;
+            margin: 0px auto;
+            margin-bottom: 50px;
+        }      
+    }
+</style>
+
+<div class="fullPageOverlay">
+    <div class="content">
+        <div>
+            <img src="/images/misc/blk-fri-bnr@2x.png">
+        <a href="https://cptransdiesel.co.nz/" class="ctaButton ctaInline ctaShop">Check out the deals</a>
+        &nbsp;&nbsp;
+        <a href="#" class="ctaButton ctaInline closeModal">No thanks</a>
+        </div>
+    </div>
+
+</div>
+
+
 <div id="masthead">
     <div id="strip">
         <div class="tagLine">
@@ -109,7 +157,7 @@
         <a href="/">
             <div class="logo">
                 <span>
-                    <svg viewBox="0 0 136.21 30">
+                    <svg viewbox="0 0 136.21 30">
                         <title>TransDiesel NZ Ltd</title>
 
                         <g id="Layer_2" data-name="Layer 2">
@@ -147,15 +195,14 @@
         </a>
         <div id="navDeskPri">
             <nav>
-                <a href="/shell"><span>New!</span> Shell Oil</a>
                 <a href="/products">Products</a>
                 <a href="/servicing">Servicing</a>
-                <a href="/shop">Online Shop</a>
+                <a href="/shop/engine-oil"><span>New!</span> Online Shop</a>
                 <a href="/bigdeals">Big Deals</a>
                 <a href="https://cptransdiesel.co.nz/" target="_blank">TradeDoor</a>
                 <a href="/Careers">Careers</a>
                 <a href="/financing">Finance &amp; Leasing</a>
-                <a href="/news">News</a>
+                <a href="/news">News/Blog</a>
             </nav>
         </div>
 
@@ -163,18 +210,20 @@
             <a href="/Search"><i class="icon-search"></i></a>
         </div>
     </div>
-        <div id="navDeskSec">
-            <nav>
-                <a href="/products/construction-equipment">Equipment</a>
-                <a href="/products/engines">Engines</a>
-                <a href="/products/generators">Generators</a>
-                <a href="/products/transmissions">Transmissions</a>
-                <a href="/products/lubricants-fluids">Oils &amp; Lubricants</a>
-                <a href="/products/filtration">Filters</a>
-                <a href="/products/spare-parts">Spares</a>
-                <a href="/used">Used Equipment</a>
-            </nav>
-        </div>
+
+    <div id="navDeskSec">
+        <nav>
+            <a href="#">Equipment</a>
+            <a href="#">Engines</a>
+            <a href="#">Generators</a>
+            <a href="#">Transmissions</a>
+            <a href="#">Oils & Lubricants</a>
+            <a href="#">Filters</a>
+            <a href="#">Spares</a>
+            <a href="#">Used Equipment</a>
+        </nav> 
+    </div>
+
 </div>
 
 
@@ -1196,6 +1245,16 @@
                     slideBy: 2
                 }
             }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a.closeModal').click(function(){
+            $('div.fullPageOverlay').fadeTo(250,0).hide(500);
+            // cookie thing
+            return false;
         });
     });
 </script>
