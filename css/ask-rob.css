@@ -1,0 +1,303 @@
+﻿body {
+    background-color: rgba(10,10,10,1.0);
+    background-image: url(/images/misc/rob-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "sf";
+    font-weight: 300;
+    font-size: 16px;
+}
+@media (pointer: fine) {
+    body {
+        background-attachment: fixed;
+    }    
+}
+
+
+main {
+    color: rgba(255,255,255,0.9);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top:0;
+}
+main p {
+    padding-top: 0;
+    padding-bottom: 0px;
+    line-height: 1.3em;
+    font-size: 1em !important;
+}
+main h1 {
+    font-family: 'bureau';
+    font-size:3em;
+    line-height: 1em;
+    max-width: 80%;
+}
+main h2 {
+    font-family: 'bureau';
+    font-size:2em;
+    line-height: 1.1em;
+}
+
+
+
+
+/* layout */
+header.brand-header {
+    position:relative;
+}
+
+header.brand-header,
+header.brand-header div.titles,
+header.brand-header picture.hayden img {
+    height:70vh;
+}
+header.brand-header picture.hayden img {
+    width:auto;
+    position: absolute;
+    right:0;
+    z-index: 1000;
+}
+
+div.titles {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*z-index: 2000;
+    bottom: 2em;*/
+}
+main.paddonFeature article.col2 {
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 5em;
+    padding:2%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+ }
+main.paddonFeature article.col2 section {
+    background-color: rgba(30,30,30,1.0);
+    flex-basis: 40%;
+    padding:0;
+}
+main.paddonFeature article.col2 section {
+    padding:2%;
+}
+main.paddonFeature article.col2.vid section:first-child {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:120% 8vw;
+}
+main.paddonFeature article.col2 section:last-child {
+    flex-basis: 49%;
+}
+div.autoSearch {
+    background-color: rgba(245,245,245,1.0);
+    padding:2em;
+    border-radius: 1em;
+    box-shadow: 0 10px 15px -5px rgba(0,0,0,1.0);
+}
+section.inCar {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+article.footnote div.scontain {
+    justify-content: center;
+}
+article.footnote p {
+    text-align:justify;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+@media screen and (min-width: 750px) {
+    article.footnote section {
+        flex-basis: 75%;
+    }
+    picture.titleMain {
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    picture.titleMain img {
+        width:70%;
+        height:auto;
+    }
+}
+
+
+
+div.fullheight {
+    padding:0 !important;
+    height: 110vh !important;
+}
+
+div.insetContent {
+    padding: 5vw;
+}
+
+
+@media screen and (max-width: 750px) {
+    body {
+        background-size: auto 75vh;
+        background-attachment: scroll;
+    }    
+    header.brand-header,
+    header.brand-header div.titles,
+    header.brand-header picture.hayden img {
+        height:45vh;
+    }
+    header.brand-header picture.hayden {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        height:50vh
+    }
+    header.brand-header picture.hayden img {
+        position: absolute;
+        width:auto;
+        right:-5%;
+        opacity: 0.7;
+    }
+    div.titles {
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+    }
+    picture.titlePresents {
+        max-width: 30vw;
+        padding-top: 5vh;
+    }
+    picture.titleMain {
+        max-width: 85vw;
+        padding:0;
+        padding-top:5vh;
+    }
+    main {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    header.brand-header {
+        margin-bottom: 2vw;
+    }
+    main.paddonFeature article.col2 section:first-child {
+        padding:5vw;
+    }
+    main.paddonFeature article.col2 section:first-child {
+        padding-top:10vw;
+        padding-bottom:10vw;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:1100px) {
+    main.paddonFeature article.col2.vid section:first-child {
+        min-height: 40vh;
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main.paddonFeature article.col2.vid section:last-child {
+        min-height: 40vh;
+        flex-basis: 70%;
+        
+    }
+    div.scontain.switch {
+        flex-direction:row-reverse;
+    }
+        
+
+}
+
+@media screen and (max-width:1100px) {
+    section.inCar {
+        height:40vh;
+    }
+}  
+
+
+
+
+
+
+.rotate5 {
+    transform: rotate(5deg);
+}
+.rotate10 {
+    transform: rotate(10deg);
+}
+.rotate15 {
+    transform: rotate(15deg);
+}
+.rotateMin5 {
+    transform: rotate(-5deg);
+}
+.rotateMin10 {
+    transform: rotate(-10deg);
+}
+.rotateMin15 {
+    transform: rotate(-15deg);
+}
+.delay1 {
+    animation-delay: 1s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+.delay3 {
+    animation-delay: 3s;
+}
+.delay4 {
+    animation-delay: 4s;
+}
+.delay5 {
+    animation-delay: 5s;
+}
+.start0 {
+    opacity: 0.0;
+}
+
+
+
+
+
+
+
+
+/* video and custom image handling */
+.pbVideo {
+    position: relative;
+    padding-bottom: 55%;
+    padding-top: 0;
+    height: 0;
+    margin-bottom: 0;
+}
+
+.pbVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pbVideo.styled {
+    border:3px solid rgba(255,255,255,1.0);
+    box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+.insetSomething {
+    padding: 1vw;
+}
