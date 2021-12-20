@@ -17,7 +17,7 @@
         margin:0,
         rewind:true,
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:7000,
         autoplayHoverPause:true,
         touchDrag:true,
