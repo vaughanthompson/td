@@ -879,7 +879,7 @@ div.fullPgImgContent {
 	background-image:linear-gradient(left, #111 95%, #000 100%);
 }
 
-.odd.p3, .odd.p7, .odd.p15 {
+.odd.p15 {
 	background-image:-webkit-linear-gradient(right, #111 95%, #000 100%);
 	background-image:-moz-linear-gradient(right, #111 95%, #000 100%);
 	background-image:-ms-linear-gradient(right, #111 95%, #000 100%);
