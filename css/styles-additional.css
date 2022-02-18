@@ -657,7 +657,6 @@ div.couponReveal {
     align-items: center;
     border-radius: 6px;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
-
 }
 
 div.couponReveal a.activate {
@@ -688,3 +687,33 @@ div.couponFrame div.offerCopy h2 {
     padding-right:2vw;
     margin-bottom: 0;
 }
+
+
+@media screen and (max-width: 750px) {
+    div.couponReveal {
+        align-items: flex-start;
+    }
+    div.couponReveal a.activate {
+        margin-top: 10vh;
+        padding: 20px;
+        font-size: 1.2em;
+        max-width:60%;
+        text-align: center;
+    }
+    div.couponReveal a:hover {
+        margin-bottom: 0px;
+    }
+    div.couponFrame {
+        padding:0;
+        display: flex;
+        justify-content: center;
+    }
+    div.couponFrame article section {
+        padding-top:3vh;
+        padding-bottom:4vh;
+    }
+    div.couponFrame article section:last-child {
+        border-top: 2px solid rgba(20,20,20,1.0);
+        padding-top:4vh;
+    }
+}  
