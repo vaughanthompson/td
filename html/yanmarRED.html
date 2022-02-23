@@ -364,17 +364,25 @@
                             top:0;
                             height: 100%;
                             width: 100%;
+                            background-color: #cccccc;
                         }
+                        .down-leave-active { animation: 2s down-leave forwards ; }
+                        .gaugeVisualYELLOW { clip-path: inset(100% 0 0 0); }
+                            @keyframes down-leave {
+                                0% { clip-path: inset(100% 0 0 0); }
+                                100% { clip-path: inset(67.5% 0 0 0); } /* 75% is starting point due to lack of colour near the base of illustration */
+                            }
+                       
                     </style>
 
                     <div class="gaugeVisual">
-                        <img src="/images/yanmarRED/yanmarRED-base.png">
-                        <div class="gaugeVisualYELLOW">
+                        <img src="/images/yanmarRED/yanmarRED-top.png">
+                        <div class="gaugeVisualYELLOW ">
                             <img src="/images/yanmarRED/yanmarRED-base.png">
                         </div>
                     </div>
 
-                    
+                
                      <div class="updates">
                          <div>
                             <h2>SO HOW ARE WE DOING?</h2>
@@ -975,6 +983,20 @@
         });
 
 
+        new Waypoint({
+        element: document.getElementsByClassName('gaugeVisual'),
+        handler: function(direction) {
+            if (direction === 'down') {
+                $('div.gaugeVisualYELLOW').addClass('down-leave-active');
+            }
+            else {
+                $('div.gaugeVisualYELLOW').removeClass('down-leave-active');
+            }
+        },
+            offset: '30%'
+        })
+
+
         
     });
 </script>
@@ -982,7 +1004,4 @@
 
 </body>
 </html>
-
-
-
 
