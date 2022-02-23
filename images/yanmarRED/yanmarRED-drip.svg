@@ -1,8 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="195" height="305" viewBox="0 0 195 305">
-  <g id="Layer_4" data-name="Layer 4">
-    <image width="4000" height="4000" transform="translate(-854.5 -145.5) scale(0.22 0.22)" xlink:href="../../../../../../clients/transdiesel/2022/22-2-yanmarRED/fwyanmarimages/Vio80_red.png"/>
-  </g>
-  <g id="Layer_3" data-name="Layer 3">
-    <path d="M164.35,130.58q8.42,15.39,15.83,31.3c9.95,21.36,15.52,43.44,10.36,67.25C180,277.6,141.86,305.65,90,302.81,31.31,299.6-8.86,246.47,5.38,189.5c3.8-15.21,10.46-30,17.58-44C46.91,98.11,78.53,54.78,97.46,2,114.78,49.31,141.56,88.9,164.35,130.58Z" style="fill: #ffffff"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 195 305" style="enable-background:new 0 0 195 305;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#D20537;}
+</style>
+<g id="Layer_3">
+	<path class="st0" d="M164.4,130.6c5.6,10.3,10.9,20.7,15.8,31.3c9.9,21.4,15.5,43.4,10.4,67.2C180,277.6,141.9,305.6,90,302.8
+		c-58.7-3.2-98.9-56.3-84.6-113.3c3.8-15.2,10.5-30,17.6-44C46.9,98.1,78.5,54.8,97.5,2C114.8,49.3,141.6,88.9,164.4,130.6z"/>
+</g>
+<rect x="103.7" y="158" transform="matrix(0.7573 0.6531 -0.6531 0.7573 164.715 -23.5347)" class="st1" width="20.7" height="103.7"/>
+<rect x="64.8" y="205.2" transform="matrix(0.6531 -0.7573 0.7573 0.6531 -148.9452 137.0936)" class="st1" width="20.7" height="51.9"/>
 </svg>
